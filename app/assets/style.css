@@ -1,0 +1,30 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.upload {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+#network-filter {
+    margin: 20px;
+    width: 200px;
+}
+
+#map {
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
