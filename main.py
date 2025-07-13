@@ -41,6 +41,10 @@ def update_dropdown(data):
     return options
 
 
+import geopandas as gpd
+
+coverage = gpd.read_file("coverage.geojson")
+
 @app.callback(
     Output('markers', 'children'),
     [Input('dataframe-store', 'data'),
@@ -48,7 +52,7 @@ def update_dropdown(data):
 )
 def update_map(data, network_filter):
     if data is None:
-        return []
+        return [dl.GeoJSON(data=coverage.__geo_interface__)]
 
     df = pd.DataFrame(data)
     if network_filter and network_filter != 'all':
@@ -61,7 +65,8 @@ def update_map(data, network_filter):
                                             dl.Tooltip(f"Network: {row['network_name']}\\nLocation: {row['latitude']}, {row['longitude']}")
                                         ]))
 
-    return markers
+    return [dl.GeoJSON(data=coverage.__geo_interface__)] + markers
+
 
 @app.callback(
     Output('stats-section', 'children'),
@@ -84,6 +89,33 @@ def update_stats(data):
         stats.append(html.P(f"{network}: {count}"))
 
     return stats
+
+
+@app.callback(
+    [Output('download-button', 'disabled'),
+     Output('dataframe-store', 'data')],
+    Input('dataframe-store', 'data'),
+    prevent_initial_call=True
+)
+def perform_spatial_join(data):
+    if data is None:
+        return True, None
+
+    points = gpd.GeoDataFrame(data, geometry=gpd.points_from_xy(data.longitude, data.latitude))
+    joined = gpd.sjoin(points, coverage, how="left", op='within')
+
+    return False, joined.to_dict('records')
+
+
+@app.callback(
+    Output("download-dataframe-csv", "data"),
+    Input("download-button", "n_clicks"),
+    State('dataframe-store', 'data'),
+    prevent_initial_call=True,
+)
+def download_csv(n_clicks, data):
+    df = pd.DataFrame(data)
+    return dcc.send_data_frame(df.to_csv, "coverage_results.csv")
 
 
 if __name__ == '__main__':

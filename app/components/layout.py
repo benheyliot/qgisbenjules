@@ -10,7 +10,9 @@ layout = dbc.Container([
         dbc.Col([
             html.Div(du.Upload(), className='upload'),
             dcc.Dropdown(id='network-filter', placeholder="Filter by network"),
-            html.Div(id='stats-section')
+            html.Div(id='stats-section'),
+            html.Button("Download Results", id="download-button", disabled=True),
+            dcc.Download(id="download-dataframe-csv")
         ], width=4),
         dbc.Col([
             dl.Map(id='map', center=[46.5, 2.5], zoom=6,
