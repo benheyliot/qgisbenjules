@@ -4,10 +4,8 @@ import dash_leaflet as dl
 import pandas as pd
 import dash_uploader as du
 from pathlib import Path
-from components.layout import layout
-import sys
-import os
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+from app.components.layout import layout
+import dash_bootstrap_components as dbc
 
 # Create the Dash app
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
