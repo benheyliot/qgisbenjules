@@ -5,6 +5,9 @@ import pandas as pd
 import dash_uploader as du
 from pathlib import Path
 from components.layout import layout
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 # Create the Dash app
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
