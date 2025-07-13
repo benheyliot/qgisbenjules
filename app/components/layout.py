@@ -16,8 +16,15 @@ layout = dbc.Container([
         ], width=4),
         dbc.Col([
             dl.Map(id='map', center=[46.5, 2.5], zoom=6,
-                   children=[dl.TileLayer(), dl.LayerGroup(id='markers')],
+                   children=[
+                       dl.TileLayer(),
+                       dl.LayersControl(
+                           [dl.BaseLayer(dl.TileLayer(), name="OpenStreetMap", checked=True)] +
+                           [dl.Overlay(dl.LayerGroup(id='markers'), name="Markers", checked=True)]
+                       )
+                   ],
                    style={'width': '100%', 'height': '80vh'})
         ], width=8)
-    ])
+    ]),
+    dl.Search(id="search", options=dict(position='topleft'))
 ], fluid=True)

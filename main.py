@@ -51,8 +51,16 @@ coverage = gpd.read_file("coverage.geojson")
      Input('network-filter', 'value')]
 )
 def update_map(data, network_filter):
+    children = [
+        dl.TileLayer(),
+        dl.LayersControl(
+            [dl.BaseLayer(dl.TileLayer(), name="OpenStreetMap", checked=True)] +
+            [dl.Overlay(dl.GeoJSON(data=coverage.__geo_interface__, style={'color': 'blue', 'opacity': 0.5, 'fillOpacity': 0.2}), name="Coverage", checked=True)] +
+            [dl.Overlay(dl.LayerGroup(id='markers'), name="Markers", checked=True)]
+        )
+    ]
     if data is None:
-        return [dl.GeoJSON(data=coverage.__geo_interface__, style={'color': 'blue', 'opacity': 0.5, 'fillOpacity': 0.2})]
+        return children
 
     df = pd.DataFrame(data)
     if network_filter and network_filter != 'all':
@@ -64,8 +72,8 @@ def update_map(data, network_filter):
                                         children=[
                                             dl.Tooltip(f"Network: {row['network_name']}\\nLocation: {row['latitude']}, {row['longitude']}")
                                         ]))
-
-    return [dl.GeoJSON(data=coverage.__geo_interface__)] + markers
+    children.append(dl.LayerGroup(markers))
+    return children
 
 
 @app.callback(
