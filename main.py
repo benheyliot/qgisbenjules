@@ -52,7 +52,7 @@ coverage = gpd.read_file("coverage.geojson")
 )
 def update_map(data, network_filter):
     if data is None:
-        return [dl.GeoJSON(data=coverage.__geo_interface__)]
+        return [dl.GeoJSON(data=coverage.__geo_interface__, style={'color': 'blue', 'opacity': 0.5, 'fillOpacity': 0.2})]
 
     df = pd.DataFrame(data)
     if network_filter and network_filter != 'all':
@@ -92,19 +92,28 @@ def update_stats(data):
 
 
 @app.callback(
-    [Output('download-button', 'disabled'),
-     Output('dataframe-store', 'data')],
-    Input('dataframe-store', 'data'),
-    prevent_initial_call=True
+    Output('download-button', 'disabled'),
+    Input('dataframe-store', 'data')
 )
-def perform_spatial_join(data):
-    if data is None:
-        return True, None
+def enable_download_button(data):
+    return data is None
 
-    points = gpd.GeoDataFrame(data, geometry=gpd.points_from_xy(data.longitude, data.latitude))
+
+@app.callback(
+    Output("download-dataframe-csv", "data"),
+    Input("download-button", "n_clicks"),
+    State('dataframe-store', 'data'),
+    prevent_initial_call=True,
+)
+def download_csv(n_clicks, data):
+    if data is None:
+        return None
+
+    df = pd.DataFrame(data)
+    points = gpd.GeoDataFrame(df, geometry=gpd.points_from_xy(df.longitude, df.latitude))
     joined = gpd.sjoin(points, coverage, how="left", op='within')
 
-    return False, joined.to_dict('records')
+    return dcc.send_data_frame(joined.to_csv, "coverage_results.csv")
 
 
 @app.callback(
