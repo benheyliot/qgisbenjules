@@ -8,3 +8,4 @@ flask
 owslib
 shapely
 fiona
+gunicorn

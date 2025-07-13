@@ -12,6 +12,7 @@ UPLOAD_FOLDER_ROOT = r"app/data"
 du.configure_upload(app, UPLOAD_FOLDER_ROOT)
 
 app.layout = layout
+server = app.server
 
 @du.callback(
     output=Output('dataframe-store', 'data'),
@@ -83,16 +84,6 @@ def update_stats(data):
 
     return stats
 
-
-if __name__ == '__main__':
-    app.run_server(debug=True)
-from dash import Dash
-import dash_leaflet as dl
-
-app = Dash(__name__)
-server = app.server  # 👈 Important pour Render
-
-app.layout = dl.Map([dl.TileLayer()], center=[46.5, 2.5], zoom=5)
 
 if __name__ == '__main__':
     app.run_server(debug=True)
