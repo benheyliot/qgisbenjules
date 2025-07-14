@@ -9,8 +9,12 @@ import io
 import os
 import tempfile
 
-from app.utils.kml_to_geojson import kml_or_kmz_to_gdf
+from ..utils.kml_to_geojson import kml_or_kmz_to_gdf
 from app.utils.raster_to_tile import tiff_to_image_overlay
+
+import sys
+import os
+sys.path.append(os.path.join(os.path.dirname(__file__), "app"))
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 
