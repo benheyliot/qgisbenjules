@@ -9,4 +9,3 @@ owslib
 shapely
 fiona
 gunicorn
-dash-leaflet-extend
