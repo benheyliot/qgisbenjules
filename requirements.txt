@@ -11,3 +11,4 @@ fiona
 gunicorn
 rasterio
 fastkml
+fpdf

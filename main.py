@@ -9,6 +9,7 @@ import io
 import os
 import tempfile
 import requests
+from fpdf import FPDF
 
 from app.utils.kml_to_geojson import kml_or_kmz_to_gdf
 from app.utils.raster_to_tile import tiff_to_image_overlay
@@ -36,7 +37,11 @@ app.layout = dbc.Container([
                 multiple=True
             ),
             dcc.Dropdown(id='network-filter', placeholder="Filter by network_name"),
-            html.Div(id='stats')
+            html.Div(id='stats'),
+            html.Button("Download CSV", id="btn_csv", n_clicks=0),
+            html.Button("Download PDF", id="btn_pdf", n_clicks=0),
+            dcc.Download(id="download-dataframe-csv"),
+            dcc.Download(id="download-dataframe-pdf"),
         ], width=3),
         dbc.Col([
             dl.Map(center=[46.603354, 1.888334], zoom=6, id='map', style={'height': '80vh'},
@@ -161,6 +166,98 @@ def update_dropdown(csv_contents):
 
     options = [{'label': n, 'value': n} for n in sorted(df['network_name'].unique())]
     return options
+
+@app.callback(
+    Output("download-dataframe-csv", "data"),
+    Input("btn_csv", "n_clicks"),
+    State('upload-csv', 'contents'),
+    prevent_initial_call=True,
+)
+def download_csv(n_clicks, csv_contents):
+    if not csv_contents:
+        return
+
+    content_type, content_string = csv_contents.split(',')
+    decoded = io.BytesIO(base64.b64decode(content_string))
+    df = pd.read_csv(decoded)
+
+    # Perform spatial join
+    points = gpd.GeoDataFrame(df, geometry=gpd.points_from_xy(df.longitude, df.latitude))
+    coverages = []
+    for file in os.listdir('app/data'):
+        if file.endswith(('.kml', '.kmz', '.geojson', '.json', '.shp')):
+            with open(os.path.join('app/data', file), 'rb') as f:
+                file_bytes = f.read()
+                ext = os.path.splitext(file)[1].lower()
+                if ext in ['.kml', '.kmz']:
+                    gdf = kml_or_kmz_to_gdf(file_bytes, file)
+                    coverages.append(gdf)
+                elif ext in ['.geojson', '.json']:
+                    gdf = gpd.read_file(io.BytesIO(file_bytes))
+                    coverages.append(gdf)
+                elif ext == '.shp':
+                    with tempfile.TemporaryDirectory() as tmpdir:
+                        with open(os.path.join(tmpdir, file), 'wb') as f:
+                            f.write(file_bytes)
+                        gdf = gpd.read_file(os.path.join(tmpdir, file))
+                        coverages.append(gdf)
+    if not coverages:
+        return
+
+    coverage = pd.concat(coverages, ignore_index=True)
+    joined = gpd.sjoin(points, coverage, how="left", op='within')
+
+    return dcc.send_data_frame(joined.to_csv, "coverage_analysis.csv")
+
+@app.callback(
+    Output("download-dataframe-pdf", "data"),
+    Input("btn_pdf", "n_clicks"),
+    State('upload-csv', 'contents'),
+    prevent_initial_call=True,
+)
+def download_pdf(n_clicks, csv_contents):
+    if not csv_contents:
+        return
+
+    content_type, content_string = csv_contents.split(',')
+    decoded = io.BytesIO(base64.b64decode(content_string))
+    df = pd.read_csv(decoded)
+
+    # Perform spatial join
+    points = gpd.GeoDataFrame(df, geometry=gpd.points_from_xy(df.longitude, df.latitude))
+    coverages = []
+    for file in os.listdir('app/data'):
+        if file.endswith(('.kml', '.kmz', '.geojson', '.json', '.shp')):
+            with open(os.path.join('app/data', file), 'rb') as f:
+                file_bytes = f.read()
+                ext = os.path.splitext(file)[1].lower()
+                if ext in ['.kml', '.kmz']:
+                    gdf = kml_or_kmz_to_gdf(file_bytes, file)
+                    coverages.append(gdf)
+                elif ext in ['.geojson', '.json']:
+                    gdf = gpd.read_file(io.BytesIO(file_bytes))
+                    coverages.append(gdf)
+                elif ext == '.shp':
+                    with tempfile.TemporaryDirectory() as tmpdir:
+                        with open(os.path.join(tmpdir, file), 'wb') as f:
+                            f.write(file_bytes)
+                        gdf = gpd.read_file(os.path.join(tmpdir, file))
+                        coverages.append(gdf)
+    if not coverages:
+        return
+
+    coverage = pd.concat(coverages, ignore_index=True)
+    joined = gpd.sjoin(points, coverage, how="left", op='within')
+
+    # Generate PDF
+    pdf = FPDF()
+    pdf.add_page()
+    pdf.set_font("Arial", size=12)
+    pdf.cell(200, 10, txt="Coverage Analysis", ln=1, align="C")
+    for index, row in joined.iterrows():
+        pdf.cell(200, 10, txt=f"Network: {row['network_name']}, Available: {'Yes' if row['index_right'] >= 0 else 'No'}", ln=1)
+
+    return dcc.send_data_frame(pdf.output, "coverage_analysis.pdf")
 
 if __name__ == '__main__':
     app.run(debug=True, host="0.0.0.0")
