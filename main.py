@@ -101,6 +101,23 @@ def update_stats(data):
 
 
 @app.callback(
+    Output('table-container', 'children'),
+    Input('dataframe-store', 'data')
+)
+def update_table(data):
+    if data is None:
+        return []
+
+    df = pd.DataFrame(data)
+    return html.Div([
+        dash.dash_table.DataTable(
+            data=df.to_dict('records'),
+            columns=[{'name': i, 'id': i} for i in df.columns]
+        )
+    ])
+
+
+@app.callback(
     Output('download-button', 'disabled'),
     Input('dataframe-store', 'data')
 )
