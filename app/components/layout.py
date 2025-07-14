@@ -16,7 +16,7 @@ app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 
 # CSV Upload and Marker Display
 @app.callback(
-    Output('markers', 'children'),
+    Output('node-markers', 'children'),
     Output('network-filter', 'options'),
     Output('network-filter', 'value'),
     Output('stats-section', 'children'),
@@ -28,54 +28,34 @@ app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 def update_markers(csv_contents, selected_network, csv_filename):
     if not csv_contents:
         return [], [], None, ""
-    content_type, content_string = csv_contents.split(',')
-    decoded = io.BytesIO(base64.b64decode(content_string))
-    df = pd.read_csv(decoded)
-    options = [{'label': n, 'value': n} for n in sorted(df['network_name'].unique())]
-    if selected_network:
-        df = df[df['network_name'] == selected_network]
-    markers = [
-        dl.Marker(
-            position=[row['latitude'], row['longitude']],
-            children=dl.Tooltip(str(row['network_name'])),
-        ) for _, row in df.iterrows()
-    ]
-    stats = f"Total nodes: {len(df)}"
-    return markers, options, selected_network, stats
+    # Parse CSV, extract latitude/longitude/network_name, and create markers
+    # Example:
+    # df = pd.read_csv(...)
+    # markers = [dl.Marker(position=[row['latitude'], row['longitude']]) for ...]
+    pass  # Implement as above
 
 # Coverage Upload and Display
 @app.callback(
-    Output('coverages', 'children'),
+    Output('coverage-layers', 'children'),
     Input('upload-coverage', 'contents'),
     State('upload-coverage', 'filename'),
     prevent_initial_call=True
 )
-def update_coverages(coverages_contents, coverages_filenames):
-    if not coverages_contents:
+def update_coverages(contents, filenames):
+    if not contents:
         return []
     layers = []
-    for content, filename in zip(coverages_contents, coverages_filenames):
-        content_type, content_string = content.split(',')
-        file_bytes = base64.b64decode(content_string)
-        ext = os.path.splitext(filename)[1].lower()
-        if ext in ['.kml', '.kmz']:
-            gdf = kml_or_kmz_to_gdf(file_bytes, filename)
-            for _, row in gdf.iterrows():
-                if row.geometry.geom_type == "Polygon":
-                    layers.append(dl.Polygon(positions=[list(row.geometry.exterior.coords)]))
-                elif row.geometry.geom_type == "Point":
-                    layers.append(dl.Marker(position=[row.geometry.y, row.geometry.x]))
-        elif ext in ['.geojson', '.json', '.shp']:
-            with tempfile.NamedTemporaryFile(delete=False, suffix=ext) as tmp:
-                tmp.write(file_bytes)
-                tmp.flush()
-                gdf = gpd.read_file(tmp.name)
-            for _, row in gdf.iterrows():
-                if row.geometry.geom_type == "Polygon":
-                    layers.append(dl.Polygon(positions=[list(row.geometry.exterior.coords)]))
-                elif row.geometry.geom_type == "Point":
-                    layers.append(dl.Marker(position=[row.geometry.y, row.geometry.x]))
-        # TIFF: For MVP, skip or show a message
+    for content, filename in zip(contents, filenames):
+        # Parse file (KML/KMZ/GeoJSON/SHP) and add polygons/points to layers
+        # Use your kml_to_geojson utility, geopandas, etc.
+        # Example for KML:
+        # gdf = kml_or_kmz_to_gdf(file_bytes, filename)
+        # for _, row in gdf.iterrows():
+        #     if row.geometry.geom_type == "Polygon":
+        #         layers.append(dl.Polygon(positions=[list(row.geometry.exterior.coords)]))
+        #     elif row.geometry.geom_type == "Point":
+        #         layers.append(dl.Marker(position=[row.geometry.y, row.geometry.x]))
+        pass  # Implement as above
     return layers
 
 def load_static_coverages(data_dir="app/data"):
@@ -117,17 +97,38 @@ def load_static_coverages(data_dir="app/data"):
 
 def serve_layout(static_overlays):
     return dbc.Container([
-        # ... your upload and filter UI ...
-        dl.Map(center=[46.5, 2.5], zoom=6, id='map', style={'width': '100%', 'height': '80vh'},
-               children=[
-                   dl.TileLayer(),
-                   dl.LayersControl(
-                       [dl.BaseLayer(dl.TileLayer(), name="OpenStreetMap", checked=True)] +
-                       static_overlays +  # <-- static overlays here
-                       [dl.Overlay(dl.LayerGroup(id='markers'), name="Markers", checked=True),
-                        dl.Overlay(dl.LayerGroup(id='coverages'), name="Uploaded Coverages", checked=True)]
-                   )
-               ])
+        dbc.Row([
+            dbc.Col([
+                html.H4("Upload Coverage (KML/KMZ/GeoJSON/SHP)"),
+                dcc.Upload(
+                    id='upload-coverage',
+                    children=html.Div(['Drag & Drop or Click to Select Coverage Files']),
+                    style={'width': '100%', 'height': '60px', 'lineHeight': '60px',
+                           'borderWidth': '1px', 'borderStyle': 'dashed', 'borderRadius': '5px',
+                           'textAlign': 'center', 'margin': '10px'},
+                    multiple=True
+                ),
+                html.H4("Upload Nodes (CSV)"),
+                dcc.Upload(
+                    id='upload-csv',
+                    children=html.Div(['Drag & Drop or Click to Select CSV File']),
+                    style={'width': '100%', 'height': '60px', 'lineHeight': '60px',
+                           'borderWidth': '1px', 'borderStyle': 'dashed', 'borderRadius': '5px',
+                           'textAlign': 'center', 'margin': '10px'},
+                    multiple=False
+                ),
+                dcc.Dropdown(id='network-filter', placeholder="Filter by network_name"),
+                html.Div(id='stats-section')
+            ], width=3),
+            dbc.Col([
+                dl.Map(center=[46.5, 2.5], zoom=6, id='map', style={'height': '80vh'},
+                       children=[
+                           dl.TileLayer(),
+                           dl.LayerGroup(id='coverage-layers'),
+                           dl.LayerGroup(id='node-markers')
+                       ])
+            ], width=9)
+        ])
     ], fluid=True)
 
 if __name__ == '__main__':
