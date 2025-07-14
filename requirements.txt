@@ -9,3 +9,5 @@ owslib
 shapely
 fiona
 gunicorn
+rasterio
+fastkml

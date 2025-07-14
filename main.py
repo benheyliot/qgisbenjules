@@ -1,157 +1,119 @@
 import dash
-from dash import dcc, html, Input, Output, State
+from dash import Output, Input, State
 import dash_leaflet as dl
-import pandas as pd
-import dash_uploader as du
-from pathlib import Path
-from app.components.layout import layout
 import dash_bootstrap_components as dbc
+import pandas as pd
+import geopandas as gpd
+import base64
+import io
+import os
+import tempfile
+import requests
 
-# Create the Dash app
+from app.components.layout import serve_layout
+from app.utils.kml_to_geojson import kml_or_kmz_to_gdf
+from app.utils.raster_to_tile import tiff_to_image_overlay
+
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
-UPLOAD_FOLDER_ROOT = r"app/data"
-du.configure_upload(app, UPLOAD_FOLDER_ROOT)
-
-app.layout = layout
-server = app.server
-
-@du.callback(
-    output=Output('dataframe-store', 'data'),
-    id='upload',
-)
-def callback_on_completion(filenames):
-    if not filenames:
-        return None
-
-    filepath = Path(UPLOAD_FOLDER_ROOT) / filenames[0]
-    df = pd.read_csv(filepath)
-    return df.to_dict('records')
-
+app.layout = serve_layout
 
 @app.callback(
     Output('network-filter', 'options'),
-    Input('dataframe-store', 'data')
-)
-def update_dropdown(data):
-    if data is None:
-        return []
-    df = pd.DataFrame(data)
-    options = [{'label': i, 'value': i} for i in df['network_name'].unique()]
-    options.insert(0, {'label': 'All Networks', 'value': 'all'})
-    return options
-
-
-import geopandas as gpd
-
-coverage = gpd.read_file("coverage.geojson")
-
-@app.callback(
+    Output('network-filter', 'value'),
     Output('markers', 'children'),
-    [Input('dataframe-store', 'data'),
-     Input('network-filter', 'value')]
+    Output('stats', 'children'),
+    Input('upload-csv', 'contents'),
+    Input('network-filter', 'value'),
+    State('upload-csv', 'filename'),
+    prevent_initial_call=True
 )
-def update_map(data, network_filter):
-    children = [
-        dl.TileLayer(),
-        dl.LayersControl(
-            [dl.BaseLayer(dl.TileLayer(), name="OpenStreetMap", checked=True)] +
-            [dl.Overlay(dl.GeoJSON(data=coverage.__geo_interface__, style={'color': 'blue', 'opacity': 0.5, 'fillOpacity': 0.2}), name="Coverage", checked=True)] +
-            [dl.Overlay(dl.LayerGroup(id='markers'), name="Markers", checked=True)] +
-            [dl.Overlay(dl.WMSLayer(url="https://qgiscloud.com/ttechnicienheyliot/QGIS_CD38_final__1_/wms", layers="QGIS_CD38_final", format="image/png", transparent=True), name="CD38", checked=True)]
-        )
+def update_map(csv_contents, selected_network, csv_filename):
+    if not csv_contents:
+        return [], None, [], ""
+    content_type, content_string = csv_contents.split(',')
+    decoded = io.BytesIO(base64.b64decode(content_string))
+    df = pd.read_csv(decoded)
+    options = [{'label': n, 'value': n} for n in sorted(df['network_name'].unique())]
+    if selected_network:
+        df = df[df['network_name'] == selected_network]
+    markers = [
+        dl.Marker(
+            position=[row['latitude'], row['longitude']],
+            children=dl.Tooltip(str(row['network_name'])),
+        ) for _, row in df.iterrows()
     ]
-    if data is None:
-        return children
-
-    df = pd.DataFrame(data)
-    if network_filter and network_filter != 'all':
-        df = df[df['network_name'] == network_filter]
-
-    markers = []
-    for index, row in df.iterrows():
-        markers.append(dl.CircleMarker(center=[row['latitude'], row['longitude']], radius=5,
-                                        children=[
-                                            dl.Tooltip(f"Network: {row['network_name']}\\nLocation: {row['latitude']}, {row['longitude']}")
-                                        ]))
-    children.append(dl.LayerGroup(markers))
-    return children
-
+    stats = f"Total nodes: {len(df)}"
+    return options, selected_network, markers, stats
 
 @app.callback(
-    Output('stats-section', 'children'),
-    Input('dataframe-store', 'data')
+    Output('coverages', 'children'),
+    Output('rasters', 'children'),
+    Input('upload-coverage', 'contents'),
+    State('upload-coverage', 'filename'),
+    prevent_initial_call=True
 )
-def update_stats(data):
-    if data is None:
-        return []
+def update_coverages(coverages_contents, coverages_filenames):
+    if not coverages_contents:
+        return [], []
+    vector_layers = []
+    raster_layers = []
+    for content, filename in zip(coverages_contents, coverages_filenames):
+        content_type, content_string = content.split(',')
+        file_bytes = base64.b64decode(content_string)
+        ext = os.path.splitext(filename)[1].lower()
+        if ext in ['.kml', '.kmz']:
+            gdf = kml_or_kmz_to_gdf(file_bytes, filename)
+            for _, row in gdf.iterrows():
+                if row.geometry.geom_type == "Polygon":
+                    vector_layers.append(dl.Polygon(positions=[list(row.geometry.exterior.coords)]))
+                elif row.geometry.geom_type == "Point":
+                    vector_layers.append(dl.Marker(position=[row.geometry.y, row.geometry.x]))
+        elif ext in ['.geojson', '.json', '.shp']:
+            with tempfile.NamedTemporaryFile(delete=False, suffix=ext) as tmp:
+                tmp.write(file_bytes)
+                tmp.flush()
+                gdf = gpd.read_file(tmp.name)
+            for _, row in gdf.iterrows():
+                if row.geometry.geom_type == "Polygon":
+                    vector_layers.append(dl.Polygon(positions=[list(row.geometry.exterior.coords)]))
+                elif row.geometry.geom_type == "Point":
+                    vector_layers.append(dl.Marker(position=[row.geometry.y, row.geometry.x]))
+        elif ext in ['.tif', '.tiff']:
+            bounds = tiff_to_image_overlay(file_bytes, filename)
+            # For MVP, use a placeholder image (you can generate a PNG from the TIFF for real use)
+            # Here, we just show the bounds as a transparent overlay
+            raster_layers.append(
+                dl.ImageOverlay(
+                    url="https://upload.wikimedia.org/wikipedia/commons/4/47/PNG_transparency_demonstration_1.png",
+                    bounds=bounds,
+                    opacity=0.5
+                )
+            )
+    return vector_layers, raster_layers
 
-    df = pd.DataFrame(data)
-    num_nodes = len(df)
-    nodes_per_network = df['network_name'].value_counts().to_dict()
+# --- QGIS Server Integration Example ---
+# This is a simple example for a spatial join using QGIS Server's WFS endpoint.
+# Replace URL and params with your QGIS Server details.
 
-    stats = [
-        html.H4("Statistics"),
-        html.P(f"Total Nodes: {num_nodes}"),
-        html.H5("Nodes per Network:")
-    ]
-    for network, count in nodes_per_network.items():
-        stats.append(html.P(f"{network}: {count}"))
+def qgis_spatial_join(point_lat, point_lon, wfs_url, layer_name):
+    params = {
+        "service": "WFS",
+        "version": "1.0.0",
+        "request": "GetFeature",
+        "typeName": layer_name,
+        "outputFormat": "application/json",
+        "srsName": "EPSG:4326",
+        "CQL_FILTER": f"INTERSECTS(geometry, POINT({point_lon} {point_lat}))"
+    }
+    r = requests.get(wfs_url, params=params)
+    if r.status_code == 200:
+        features = r.json().get("features", [])
+        if features:
+            return features[0]["properties"]
+    return {}
 
-    return stats
-
-
-@app.callback(
-    Output('table-container', 'children'),
-    Input('dataframe-store', 'data')
-)
-def update_table(data):
-    if data is None:
-        return []
-
-    df = pd.DataFrame(data)
-    return html.Div([
-        dash.dash_table.DataTable(
-            data=df.to_dict('records'),
-            columns=[{'name': i, 'id': i} for i in df.columns]
-        )
-    ])
-
-
-@app.callback(
-    Output('download-button', 'disabled'),
-    Input('dataframe-store', 'data')
-)
-def enable_download_button(data):
-    return data is None
-
-
-@app.callback(
-    Output("download-dataframe-csv", "data"),
-    Input("download-button", "n_clicks"),
-    State('dataframe-store', 'data'),
-    prevent_initial_call=True,
-)
-def download_csv(n_clicks, data):
-    if data is None:
-        return None
-
-    df = pd.DataFrame(data)
-    points = gpd.GeoDataFrame(df, geometry=gpd.points_from_xy(df.longitude, df.latitude))
-    joined = gpd.sjoin(points, coverage, how="left", op='within')
-
-    return dcc.send_data_frame(joined.to_csv, "coverage_results.csv")
-
-
-@app.callback(
-    Output("download-dataframe-csv", "data"),
-    Input("download-button", "n_clicks"),
-    State('dataframe-store', 'data'),
-    prevent_initial_call=True,
-)
-def download_csv(n_clicks, data):
-    df = pd.DataFrame(data)
-    return dcc.send_data_frame(df.to_csv, "coverage_results.csv")
-
+# Example usage in a callback (not wired in above for brevity):
+# props = qgis_spatial_join(48.85, 2.35, "http://your-qgis-server-url/ows", "your_layer_name")
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run(debug=True, host="0.0.0.0")
