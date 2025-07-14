@@ -10,65 +10,21 @@ import os
 import tempfile
 import requests
 
-from app.components.layout import serve_layout
+from app.components.layout import layout
 from app.utils.kml_to_geojson import kml_or_kmz_to_gdf
 from app.utils.raster_to_tile import tiff_to_image_overlay
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
-
-static_overlays = []
-for file in os.listdir('app/data'):
-    if file.endswith(('.kml', '.kmz', '.geojson', '.json', '.shp', '.tif', '.tiff')):
-        with open(os.path.join('app/data', file), 'rb') as f:
-            file_bytes = f.read()
-            ext = os.path.splitext(file)[1].lower()
-            if ext in ['.kml', '.kmz']:
-                gdf = kml_or_kmz_to_gdf(file_bytes, file)
-                for _, row in gdf.iterrows():
-                    if row.geometry.geom_type == "Polygon":
-                        static_overlays.append(dl.Polygon(positions=[list(row.geometry.exterior.coords)]))
-                    elif row.geometry.geom_type == "Point":
-                        static_overlays.append(dl.Marker(position=[row.geometry.y, row.geometry.x]))
-            elif ext in ['.geojson', '.json']:
-                gdf = gpd.read_file(io.BytesIO(file_bytes))
-                for _, row in gdf.iterrows():
-                    if row.geometry.geom_type == "Polygon":
-                        static_overlays.append(dl.Polygon(positions=[list(row.geometry.exterior.coords)]))
-                    elif row.geometry.geom_type == "Point":
-                        static_overlays.append(dl.Marker(position=[row.geometry.y, row.geometry.x]))
-            elif ext == '.shp':
-                with tempfile.TemporaryDirectory() as tmpdir:
-                    with open(os.path.join(tmpdir, file), 'wb') as f:
-                        f.write(file_bytes)
-                    gdf = gpd.read_file(os.path.join(tmpdir, file))
-                for _, row in gdf.iterrows():
-                    if row.geometry.geom_type == "Polygon":
-                        static_overlays.append(dl.Polygon(positions=[list(row.geometry.exterior.coords)]))
-                    elif row.geometry.geom_type == "Point":
-                        static_overlays.append(dl.Marker(position=[row.geometry.y, row.geometry.x]))
-            elif ext in ['.tif', '.tiff']:
-                bounds = tiff_to_image_overlay(file_bytes, file)
-                static_overlays.append(
-                    dl.ImageOverlay(
-                        url="https://upload.wikimedia.org/wikipedia/commons/4/47/PNG_transparency_demonstration_1.png",
-                        bounds=bounds,
-                        opacity=0.5
-                    )
-                )
-
-app.layout = serve_layout(static_overlays)
+app.layout = layout
 server = app.server
 
 @app.callback(
-    Output('network-filter', 'options'),
-    Output('network-filter', 'value'),
     Output('markers', 'children'),
-    Output('stats', 'children'),
-    Input('upload-csv', 'contents'),
     Input('network-filter', 'value'),
+    State('upload-csv', 'contents'),
     State('upload-csv', 'filename'),
 )
-def update_map(csv_contents, selected_network, csv_filename):
+def update_map(selected_network, csv_contents, csv_filename):
     if csv_contents:
         content_type, content_string = csv_contents.split(',')
         decoded = io.BytesIO(base64.b64decode(content_string))
@@ -80,9 +36,8 @@ def update_map(csv_contents, selected_network, csv_filename):
                 df = pd.concat([df, pd.read_csv(os.path.join('app/data', file))])
 
     if df.empty:
-        return [], None, [], ""
+        return []
 
-    options = [{'label': n, 'value': n} for n in sorted(df['network_name'].unique())]
     if selected_network:
         df = df[df['network_name'] == selected_network]
     markers = [
@@ -91,8 +46,7 @@ def update_map(csv_contents, selected_network, csv_filename):
             children=dl.Tooltip(str(row['network_name'])),
         ) for _, row in df.iterrows()
     ]
-    stats = f"Total nodes: {len(df)}"
-    return options, selected_network, markers, stats
+    return markers
 
 @app.callback(
     Output('coverages', 'children'),
@@ -150,6 +104,27 @@ def update_coverages(coverages_contents, coverages_filenames):
                 )
             )
     return vector_layers, raster_layers
+
+@app.callback(
+    Output('network-filter', 'options'),
+    Input('upload-csv', 'contents'),
+)
+def update_dropdown(csv_contents):
+    if csv_contents:
+        content_type, content_string = csv_contents.split(',')
+        decoded = io.BytesIO(base64.b64decode(content_string))
+        df = pd.read_csv(decoded)
+    else:
+        df = pd.DataFrame()
+        for file in os.listdir('app/data'):
+            if file.endswith('.csv'):
+                df = pd.concat([df, pd.read_csv(os.path.join('app/data', file))])
+
+    if df.empty:
+        return []
+
+    options = [{'label': n, 'value': n} for n in sorted(df['network_name'].unique())]
+    return options
 
 if __name__ == '__main__':
     app.run(debug=True, host="0.0.0.0")
