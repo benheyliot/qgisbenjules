@@ -1,0 +1,4324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:globalmapper="https://www.bluemarblegeo.com/globalmapper">
+<Document>
+<name>En Service 20250306</name>
+<ScreenOverlay> <name> L�gende : Niveau de Service </name> <Icon> <href>L�gende.png</href> </Icon> <overlayXY x="0" y="0.97" xunits="fraction" yunits="fraction"/> <screenXY x="0.01" y="0.97" xunits="fraction" yunits="fraction"/> <rotationXY x="0.5" y="0.5" xunits="fraction" yunits="fraction"/> <size x="0" y="0" xunits="pixels" yunits="pixels"/> </ScreenOverlay>
+<Style>
+  <ListStyle>
+    <listItemType>checkHideChildren</listItemType>
+  </ListStyle>
+</Style>
+      <Folder>
+        <name>kml_image_En Service 20250306_L3_3_1</name>
+        <Region>
+          <LatLonAltBox>
+            <north>44.78766882517967929</north>
+            <south>44.67997867358348429</south>
+            <east>5.76535200101657352</east>
+            <west>5.24287410470777182</west>
+          </LatLonAltBox>
+          <Lod>
+            <minLodPixels>277</minLodPixels>
+            <maxLodPixels>2049</maxLodPixels>
+          </Lod>
+        </Region>
+        <GroundOverlay> <color>7fffffff</color>
+          <drawOrder>3</drawOrder>
+          <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+          <Icon>
+            <href>kml_image_En Service 20250306_L3_3_1.png</href>
+          </Icon>
+          <LatLonBox>
+            <north>44.78766882517967929</north>
+            <south>44.67997867358348429</south>
+            <east>5.76535200101657352</east>
+            <west>5.24287410470777182</west>
+          </LatLonBox>
+        </GroundOverlay>
+        <Folder>
+          <name>kml_image_En Service 20250306_L4_6_3</name>
+          <Region>
+            <LatLonAltBox>
+              <north>44.78766882517967929</north>
+              <south>44.67997867358348429</south>
+              <east>5.76535200101657352</east>
+              <west>5.50411305286217267</west>
+            </LatLonAltBox>
+            <Lod>
+              <minLodPixels>391</minLodPixels>
+              <maxLodPixels>2049</maxLodPixels>
+            </Lod>
+          </Region>
+          <GroundOverlay> <color>7fffffff</color>
+            <drawOrder>4</drawOrder>
+            <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+            <Icon>
+              <href>kml_image_En Service 20250306_L4_6_3.png</href>
+            </Icon>
+            <LatLonBox>
+              <north>44.78766882517967929</north>
+              <south>44.67997867358348429</south>
+              <east>5.76535200101657352</east>
+              <west>5.50411305286217267</west>
+            </LatLonBox>
+          </GroundOverlay>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_12_6</name>
+            <Region>
+              <LatLonAltBox>
+                <north>44.78766882517967929</north>
+                <south>44.69546588602039350</south>
+                <east>5.63473252693937265</east>
+                <west>5.50411305286217267</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_12_6.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>44.78766882517967929</north>
+                <south>44.69546588602039350</south>
+                <east>5.63473252693937265</east>
+                <west>5.50411305286217267</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_12_7</name>
+            <Region>
+              <LatLonAltBox>
+                <north>44.78766882517967929</north>
+                <south>44.69546588602039350</south>
+                <east>5.76535200101657352</east>
+                <west>5.63473252693937265</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_12_7.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>44.78766882517967929</north>
+                <south>44.69546588602039350</south>
+                <east>5.76535200101657352</east>
+                <west>5.63473252693937265</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+        </Folder>
+      </Folder>
+  <Folder>
+    <name>kml_image_En Service 20250306_L1_0_0</name>
+    <Region>
+      <LatLonAltBox>
+        <north>45.89410409509105904</north>
+        <south>44.67997867358348429</south>
+        <east>6.41436751283766249</east>
+        <west>4.72039620839897012</west>
+      </LatLonAltBox>
+      <Lod>
+        <minLodPixels>52</minLodPixels>
+        <maxLodPixels>2049</maxLodPixels>
+      </Lod>
+    </Region>
+    <GroundOverlay> <color>7fffffff</color>
+      <drawOrder>1</drawOrder>
+      <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+      <Icon>
+        <href>kml_image_En Service 20250306_L1_0_0.png</href>
+      </Icon>
+      <LatLonBox>
+        <north>45.89410409509105904</north>
+        <south>44.67997867358348429</south>
+        <east>6.41436751283766249</east>
+        <west>4.72039620839897012</west>
+      </LatLonBox>
+    </GroundOverlay>
+    <Folder>
+      <name>kml_image_En Service 20250306_L2_0_0</name>
+      <Region>
+        <LatLonAltBox>
+          <north>45.89410409509105904</north>
+          <south>45.15648058181680113</south>
+          <east>5.76535200101657352</east>
+          <west>4.72039620839897012</west>
+        </LatLonAltBox>
+        <Lod>
+          <minLodPixels>512</minLodPixels>
+          <maxLodPixels>2049</maxLodPixels>
+        </Lod>
+      </Region>
+      <GroundOverlay> <color>7fffffff</color>
+        <drawOrder>2</drawOrder>
+        <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+        <Icon>
+          <href>kml_image_En Service 20250306_L2_0_0.png</href>
+        </Icon>
+        <LatLonBox>
+          <north>45.89410409509105904</north>
+          <south>45.15648058181680113</south>
+          <east>5.76535200101657352</east>
+          <west>4.72039620839897012</west>
+        </LatLonBox>
+      </GroundOverlay>
+      <Folder>
+        <name>kml_image_En Service 20250306_L3_0_0</name>
+        <Region>
+          <LatLonAltBox>
+            <north>45.89410409509105904</north>
+            <south>45.52529233845393009</south>
+            <east>5.24287410470777182</east>
+            <west>4.72039620839897012</west>
+          </LatLonAltBox>
+          <Lod>
+            <minLodPixels>512</minLodPixels>
+            <maxLodPixels>2049</maxLodPixels>
+          </Lod>
+        </Region>
+        <GroundOverlay> <color>7fffffff</color>
+          <drawOrder>3</drawOrder>
+          <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+          <Icon>
+            <href>kml_image_En Service 20250306_L3_0_0.png</href>
+          </Icon>
+          <LatLonBox>
+            <north>45.89410409509105904</north>
+            <south>45.52529233845393009</south>
+            <east>5.24287410470777182</east>
+            <west>4.72039620839897012</west>
+          </LatLonBox>
+        </GroundOverlay>
+        <Folder>
+          <name>kml_image_En Service 20250306_L4_0_1</name>
+          <Region>
+            <LatLonAltBox>
+              <north>45.89410409509105904</north>
+              <south>45.70969821677249456</south>
+              <east>5.24287410470777182</east>
+              <west>4.98163515655337097</west>
+            </LatLonAltBox>
+            <Lod>
+              <minLodPixels>512</minLodPixels>
+              <maxLodPixels>2049</maxLodPixels>
+            </Lod>
+          </Region>
+          <GroundOverlay> <color>7fffffff</color>
+            <drawOrder>4</drawOrder>
+            <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+            <Icon>
+              <href>kml_image_En Service 20250306_L4_0_1.png</href>
+            </Icon>
+            <LatLonBox>
+              <north>45.89410409509105904</north>
+              <south>45.70969821677249456</south>
+              <east>5.24287410470777182</east>
+              <west>4.98163515655337097</west>
+            </LatLonBox>
+          </GroundOverlay>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_0_2</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.89410409509105904</north>
+                <south>45.80190115593178035</south>
+                <east>5.11225463063057095</east>
+                <west>4.98163515655337097</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_0_2.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.89410409509105904</north>
+                <south>45.80190115593178035</south>
+                <east>5.11225463063057095</east>
+                <west>4.98163515655337097</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_0_3</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.89410409509105904</north>
+                <south>45.80190115593178035</south>
+                <east>5.24287410470777182</east>
+                <west>5.11225463063057095</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_0_3.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.89410409509105904</north>
+                <south>45.80190115593178035</south>
+                <east>5.24287410470777182</east>
+                <west>5.11225463063057095</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_1_2</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.80190115593178035</north>
+                <south>45.70969821677249456</south>
+                <east>5.11225463063057095</east>
+                <west>4.98163515655337097</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_1_2.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.80190115593178035</north>
+                <south>45.70969821677249456</south>
+                <east>5.11225463063057095</east>
+                <west>4.98163515655337097</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_1_3</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.80190115593178035</north>
+                <south>45.70969821677249456</south>
+                <east>5.24287410470777182</east>
+                <west>5.11225463063057095</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_1_3.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.80190115593178035</north>
+                <south>45.70969821677249456</south>
+                <east>5.24287410470777182</east>
+                <west>5.11225463063057095</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+        </Folder>
+        <Folder>
+          <name>kml_image_En Service 20250306_L4_1_0</name>
+          <Region>
+            <LatLonAltBox>
+              <north>45.70969821677249456</north>
+              <south>45.52529233845393009</south>
+              <east>4.98163515655337097</east>
+              <west>4.72039620839897012</west>
+            </LatLonAltBox>
+            <Lod>
+              <minLodPixels>512</minLodPixels>
+              <maxLodPixels>2049</maxLodPixels>
+            </Lod>
+          </Region>
+          <GroundOverlay> <color>7fffffff</color>
+            <drawOrder>4</drawOrder>
+            <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+            <Icon>
+              <href>kml_image_En Service 20250306_L4_1_0.png</href>
+            </Icon>
+            <LatLonBox>
+              <north>45.70969821677249456</north>
+              <south>45.52529233845393009</south>
+              <east>4.98163515655337097</east>
+              <west>4.72039620839897012</west>
+            </LatLonBox>
+          </GroundOverlay>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_3_0</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.61749527761321588</north>
+                <south>45.52529233845393009</south>
+                <east>4.85101568247617010</east>
+                <west>4.72039620839897012</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_3_0.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.61749527761321588</north>
+                <south>45.52529233845393009</south>
+                <east>4.85101568247617010</east>
+                <west>4.72039620839897012</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_3_1</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.61749527761321588</north>
+                <south>45.52529233845393009</south>
+                <east>4.98163515655337097</east>
+                <west>4.85101568247617010</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_3_1.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.61749527761321588</north>
+                <south>45.52529233845393009</south>
+                <east>4.98163515655337097</east>
+                <west>4.85101568247617010</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+        </Folder>
+        <Folder>
+          <name>kml_image_En Service 20250306_L4_1_1</name>
+          <Region>
+            <LatLonAltBox>
+              <north>45.70969821677249456</north>
+              <south>45.52529233845393009</south>
+              <east>5.24287410470777182</east>
+              <west>4.98163515655337097</west>
+            </LatLonAltBox>
+            <Lod>
+              <minLodPixels>512</minLodPixels>
+              <maxLodPixels>2049</maxLodPixels>
+            </Lod>
+          </Region>
+          <GroundOverlay> <color>7fffffff</color>
+            <drawOrder>4</drawOrder>
+            <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+            <Icon>
+              <href>kml_image_En Service 20250306_L4_1_1.png</href>
+            </Icon>
+            <LatLonBox>
+              <north>45.70969821677249456</north>
+              <south>45.52529233845393009</south>
+              <east>5.24287410470777182</east>
+              <west>4.98163515655337097</west>
+            </LatLonBox>
+          </GroundOverlay>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_2_2</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.70969821677249456</north>
+                <south>45.61749527761321588</south>
+                <east>5.11225463063057095</east>
+                <west>4.98163515655337097</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_2_2.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.70969821677249456</north>
+                <south>45.61749527761321588</south>
+                <east>5.11225463063057095</east>
+                <west>4.98163515655337097</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_2_3</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.70969821677249456</north>
+                <south>45.61749527761321588</south>
+                <east>5.24287410470777182</east>
+                <west>5.11225463063057095</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_2_3.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.70969821677249456</north>
+                <south>45.61749527761321588</south>
+                <east>5.24287410470777182</east>
+                <west>5.11225463063057095</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_3_2</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.61749527761321588</north>
+                <south>45.52529233845393009</south>
+                <east>5.11225463063057095</east>
+                <west>4.98163515655337097</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_3_2.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.61749527761321588</north>
+                <south>45.52529233845393009</south>
+                <east>5.11225463063057095</east>
+                <west>4.98163515655337097</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_3_3</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.61749527761321588</north>
+                <south>45.52529233845393009</south>
+                <east>5.24287410470777182</east>
+                <west>5.11225463063057095</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_3_3.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.61749527761321588</north>
+                <south>45.52529233845393009</south>
+                <east>5.24287410470777182</east>
+                <west>5.11225463063057095</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+        </Folder>
+      </Folder>
+      <Folder>
+        <name>kml_image_En Service 20250306_L3_0_1</name>
+        <Region>
+          <LatLonAltBox>
+            <north>45.89410409509105904</north>
+            <south>45.52529233845393009</south>
+            <east>5.76535200101657352</east>
+            <west>5.24287410470777182</west>
+          </LatLonAltBox>
+          <Lod>
+            <minLodPixels>512</minLodPixels>
+            <maxLodPixels>2049</maxLodPixels>
+          </Lod>
+        </Region>
+        <GroundOverlay> <color>7fffffff</color>
+          <drawOrder>3</drawOrder>
+          <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+          <Icon>
+            <href>kml_image_En Service 20250306_L3_0_1.png</href>
+          </Icon>
+          <LatLonBox>
+            <north>45.89410409509105904</north>
+            <south>45.52529233845393009</south>
+            <east>5.76535200101657352</east>
+            <west>5.24287410470777182</west>
+          </LatLonBox>
+        </GroundOverlay>
+        <Folder>
+          <name>kml_image_En Service 20250306_L4_0_2</name>
+          <Region>
+            <LatLonAltBox>
+              <north>45.89410409509105904</north>
+              <south>45.70969821677249456</south>
+              <east>5.50411305286217267</east>
+              <west>5.24287410470777182</west>
+            </LatLonAltBox>
+            <Lod>
+              <minLodPixels>512</minLodPixels>
+              <maxLodPixels>2049</maxLodPixels>
+            </Lod>
+          </Region>
+          <GroundOverlay> <color>7fffffff</color>
+            <drawOrder>4</drawOrder>
+            <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+            <Icon>
+              <href>kml_image_En Service 20250306_L4_0_2.png</href>
+            </Icon>
+            <LatLonBox>
+              <north>45.89410409509105904</north>
+              <south>45.70969821677249456</south>
+              <east>5.50411305286217267</east>
+              <west>5.24287410470777182</west>
+            </LatLonBox>
+          </GroundOverlay>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_0_4</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.89410409509105904</north>
+                <south>45.80190115593178035</south>
+                <east>5.37349357878497180</east>
+                <west>5.24287410470777182</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_0_4.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.89410409509105904</north>
+                <south>45.80190115593178035</south>
+                <east>5.37349357878497180</east>
+                <west>5.24287410470777182</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_0_5</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.89410409509105904</north>
+                <south>45.80190115593178035</south>
+                <east>5.50411305286217267</east>
+                <west>5.37349357878497180</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_0_5.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.89410409509105904</north>
+                <south>45.80190115593178035</south>
+                <east>5.50411305286217267</east>
+                <west>5.37349357878497180</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_1_4</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.80190115593178035</north>
+                <south>45.70969821677249456</south>
+                <east>5.37349357878497180</east>
+                <west>5.24287410470777182</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_1_4.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.80190115593178035</north>
+                <south>45.70969821677249456</south>
+                <east>5.37349357878497180</east>
+                <west>5.24287410470777182</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_1_5</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.80190115593178035</north>
+                <south>45.70969821677249456</south>
+                <east>5.50411305286217267</east>
+                <west>5.37349357878497180</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_1_5.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.80190115593178035</north>
+                <south>45.70969821677249456</south>
+                <east>5.50411305286217267</east>
+                <west>5.37349357878497180</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+        </Folder>
+        <Folder>
+          <name>kml_image_En Service 20250306_L4_0_3</name>
+          <Region>
+            <LatLonAltBox>
+              <north>45.89410409509105904</north>
+              <south>45.70969821677249456</south>
+              <east>5.76535200101657352</east>
+              <west>5.50411305286217267</west>
+            </LatLonAltBox>
+            <Lod>
+              <minLodPixels>512</minLodPixels>
+              <maxLodPixels>2049</maxLodPixels>
+            </Lod>
+          </Region>
+          <GroundOverlay> <color>7fffffff</color>
+            <drawOrder>4</drawOrder>
+            <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+            <Icon>
+              <href>kml_image_En Service 20250306_L4_0_3.png</href>
+            </Icon>
+            <LatLonBox>
+              <north>45.89410409509105904</north>
+              <south>45.70969821677249456</south>
+              <east>5.76535200101657352</east>
+              <west>5.50411305286217267</west>
+            </LatLonBox>
+          </GroundOverlay>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_1_6</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.80190115593178035</north>
+                <south>45.70969821677249456</south>
+                <east>5.63473252693937265</east>
+                <west>5.50411305286217267</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_1_6.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.80190115593178035</north>
+                <south>45.70969821677249456</south>
+                <east>5.63473252693937265</east>
+                <west>5.50411305286217267</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+        </Folder>
+        <Folder>
+          <name>kml_image_En Service 20250306_L4_1_2</name>
+          <Region>
+            <LatLonAltBox>
+              <north>45.70969821677249456</north>
+              <south>45.52529233845393009</south>
+              <east>5.50411305286217267</east>
+              <west>5.24287410470777182</west>
+            </LatLonAltBox>
+            <Lod>
+              <minLodPixels>512</minLodPixels>
+              <maxLodPixels>2049</maxLodPixels>
+            </Lod>
+          </Region>
+          <GroundOverlay> <color>7fffffff</color>
+            <drawOrder>4</drawOrder>
+            <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+            <Icon>
+              <href>kml_image_En Service 20250306_L4_1_2.png</href>
+            </Icon>
+            <LatLonBox>
+              <north>45.70969821677249456</north>
+              <south>45.52529233845393009</south>
+              <east>5.50411305286217267</east>
+              <west>5.24287410470777182</west>
+            </LatLonBox>
+          </GroundOverlay>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_2_4</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.70969821677249456</north>
+                <south>45.61749527761321588</south>
+                <east>5.37349357878497180</east>
+                <west>5.24287410470777182</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_2_4.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.70969821677249456</north>
+                <south>45.61749527761321588</south>
+                <east>5.37349357878497180</east>
+                <west>5.24287410470777182</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_2_5</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.70969821677249456</north>
+                <south>45.61749527761321588</south>
+                <east>5.50411305286217267</east>
+                <west>5.37349357878497180</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_2_5.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.70969821677249456</north>
+                <south>45.61749527761321588</south>
+                <east>5.50411305286217267</east>
+                <west>5.37349357878497180</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_3_4</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.61749527761321588</north>
+                <south>45.52529233845393009</south>
+                <east>5.37349357878497180</east>
+                <west>5.24287410470777182</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_3_4.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.61749527761321588</north>
+                <south>45.52529233845393009</south>
+                <east>5.37349357878497180</east>
+                <west>5.24287410470777182</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_3_5</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.61749527761321588</north>
+                <south>45.52529233845393009</south>
+                <east>5.50411305286217267</east>
+                <west>5.37349357878497180</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_3_5.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.61749527761321588</north>
+                <south>45.52529233845393009</south>
+                <east>5.50411305286217267</east>
+                <west>5.37349357878497180</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+        </Folder>
+        <Folder>
+          <name>kml_image_En Service 20250306_L4_1_3</name>
+          <Region>
+            <LatLonAltBox>
+              <north>45.70969821677249456</north>
+              <south>45.52529233845393009</south>
+              <east>5.76535200101657352</east>
+              <west>5.50411305286217267</west>
+            </LatLonAltBox>
+            <Lod>
+              <minLodPixels>512</minLodPixels>
+              <maxLodPixels>2049</maxLodPixels>
+            </Lod>
+          </Region>
+          <GroundOverlay> <color>7fffffff</color>
+            <drawOrder>4</drawOrder>
+            <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+            <Icon>
+              <href>kml_image_En Service 20250306_L4_1_3.png</href>
+            </Icon>
+            <LatLonBox>
+              <north>45.70969821677249456</north>
+              <south>45.52529233845393009</south>
+              <east>5.76535200101657352</east>
+              <west>5.50411305286217267</west>
+            </LatLonBox>
+          </GroundOverlay>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_2_6</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.70969821677249456</north>
+                <south>45.61749527761321588</south>
+                <east>5.63473252693937265</east>
+                <west>5.50411305286217267</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_2_6.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.70969821677249456</north>
+                <south>45.61749527761321588</south>
+                <east>5.63473252693937265</east>
+                <west>5.50411305286217267</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_3_6</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.61749527761321588</north>
+                <south>45.52529233845393009</south>
+                <east>5.63473252693937265</east>
+                <west>5.50411305286217267</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_3_6.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.61749527761321588</north>
+                <south>45.52529233845393009</south>
+                <east>5.63473252693937265</east>
+                <west>5.50411305286217267</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_3_7</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.61749527761321588</north>
+                <south>45.52529233845393009</south>
+                <east>5.76535200101657352</east>
+                <west>5.63473252693937265</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_3_7.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.61749527761321588</north>
+                <south>45.52529233845393009</south>
+                <east>5.76535200101657352</east>
+                <west>5.63473252693937265</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+        </Folder>
+      </Folder>
+      <Folder>
+        <name>kml_image_En Service 20250306_L3_1_0</name>
+        <Region>
+          <LatLonAltBox>
+            <north>45.52529233845393009</north>
+            <south>45.15648058181680113</south>
+            <east>5.24287410470777182</east>
+            <west>4.72039620839897012</west>
+          </LatLonAltBox>
+          <Lod>
+            <minLodPixels>512</minLodPixels>
+            <maxLodPixels>2049</maxLodPixels>
+          </Lod>
+        </Region>
+        <GroundOverlay> <color>7fffffff</color>
+          <drawOrder>3</drawOrder>
+          <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+          <Icon>
+            <href>kml_image_En Service 20250306_L3_1_0.png</href>
+          </Icon>
+          <LatLonBox>
+            <north>45.52529233845393009</north>
+            <south>45.15648058181680113</south>
+            <east>5.24287410470777182</east>
+            <west>4.72039620839897012</west>
+          </LatLonBox>
+        </GroundOverlay>
+        <Folder>
+          <name>kml_image_En Service 20250306_L4_2_0</name>
+          <Region>
+            <LatLonAltBox>
+              <north>45.52529233845393009</north>
+              <south>45.34088646013536561</south>
+              <east>4.98163515655337097</east>
+              <west>4.72039620839897012</west>
+            </LatLonAltBox>
+            <Lod>
+              <minLodPixels>512</minLodPixels>
+              <maxLodPixels>2049</maxLodPixels>
+            </Lod>
+          </Region>
+          <GroundOverlay> <color>7fffffff</color>
+            <drawOrder>4</drawOrder>
+            <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+            <Icon>
+              <href>kml_image_En Service 20250306_L4_2_0.png</href>
+            </Icon>
+            <LatLonBox>
+              <north>45.52529233845393009</north>
+              <south>45.34088646013536561</south>
+              <east>4.98163515655337097</east>
+              <west>4.72039620839897012</west>
+            </LatLonBox>
+          </GroundOverlay>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_4_0</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.52529233845393009</north>
+                <south>45.43308939929465140</south>
+                <east>4.85101568247617010</east>
+                <west>4.72039620839897012</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_4_0.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.52529233845393009</north>
+                <south>45.43308939929465140</south>
+                <east>4.85101568247617010</east>
+                <west>4.72039620839897012</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_4_1</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.52529233845393009</north>
+                <south>45.43308939929465140</south>
+                <east>4.98163515655337097</east>
+                <west>4.85101568247617010</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_4_1.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.52529233845393009</north>
+                <south>45.43308939929465140</south>
+                <east>4.98163515655337097</east>
+                <west>4.85101568247617010</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_5_0</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.43308939929465140</north>
+                <south>45.34088646013536561</south>
+                <east>4.85101568247617010</east>
+                <west>4.72039620839897012</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_5_0.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.43308939929465140</north>
+                <south>45.34088646013536561</south>
+                <east>4.85101568247617010</east>
+                <west>4.72039620839897012</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_5_1</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.43308939929465140</north>
+                <south>45.34088646013536561</south>
+                <east>4.98163515655337097</east>
+                <west>4.85101568247617010</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_5_1.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.43308939929465140</north>
+                <south>45.34088646013536561</south>
+                <east>4.98163515655337097</east>
+                <west>4.85101568247617010</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+        </Folder>
+        <Folder>
+          <name>kml_image_En Service 20250306_L4_2_1</name>
+          <Region>
+            <LatLonAltBox>
+              <north>45.52529233845393009</north>
+              <south>45.34088646013536561</south>
+              <east>5.24287410470777182</east>
+              <west>4.98163515655337097</west>
+            </LatLonAltBox>
+            <Lod>
+              <minLodPixels>512</minLodPixels>
+              <maxLodPixels>2049</maxLodPixels>
+            </Lod>
+          </Region>
+          <GroundOverlay> <color>7fffffff</color>
+            <drawOrder>4</drawOrder>
+            <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+            <Icon>
+              <href>kml_image_En Service 20250306_L4_2_1.png</href>
+            </Icon>
+            <LatLonBox>
+              <north>45.52529233845393009</north>
+              <south>45.34088646013536561</south>
+              <east>5.24287410470777182</east>
+              <west>4.98163515655337097</west>
+            </LatLonBox>
+          </GroundOverlay>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_4_2</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.52529233845393009</north>
+                <south>45.43308939929465140</south>
+                <east>5.11225463063057095</east>
+                <west>4.98163515655337097</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_4_2.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.52529233845393009</north>
+                <south>45.43308939929465140</south>
+                <east>5.11225463063057095</east>
+                <west>4.98163515655337097</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_4_3</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.52529233845393009</north>
+                <south>45.43308939929465140</south>
+                <east>5.24287410470777182</east>
+                <west>5.11225463063057095</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_4_3.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.52529233845393009</north>
+                <south>45.43308939929465140</south>
+                <east>5.24287410470777182</east>
+                <west>5.11225463063057095</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_5_2</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.43308939929465140</north>
+                <south>45.34088646013536561</south>
+                <east>5.11225463063057095</east>
+                <west>4.98163515655337097</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_5_2.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.43308939929465140</north>
+                <south>45.34088646013536561</south>
+                <east>5.11225463063057095</east>
+                <west>4.98163515655337097</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_5_3</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.43308939929465140</north>
+                <south>45.34088646013536561</south>
+                <east>5.24287410470777182</east>
+                <west>5.11225463063057095</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_5_3.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.43308939929465140</north>
+                <south>45.34088646013536561</south>
+                <east>5.24287410470777182</east>
+                <west>5.11225463063057095</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+        </Folder>
+        <Folder>
+          <name>kml_image_En Service 20250306_L4_3_0</name>
+          <Region>
+            <LatLonAltBox>
+              <north>45.34088646013536561</north>
+              <south>45.15648058181680113</south>
+              <east>4.98163515655337097</east>
+              <west>4.72039620839897012</west>
+            </LatLonAltBox>
+            <Lod>
+              <minLodPixels>512</minLodPixels>
+              <maxLodPixels>2049</maxLodPixels>
+            </Lod>
+          </Region>
+          <GroundOverlay> <color>7fffffff</color>
+            <drawOrder>4</drawOrder>
+            <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+            <Icon>
+              <href>kml_image_En Service 20250306_L4_3_0.png</href>
+            </Icon>
+            <LatLonBox>
+              <north>45.34088646013536561</north>
+              <south>45.15648058181680113</south>
+              <east>4.98163515655337097</east>
+              <west>4.72039620839897012</west>
+            </LatLonBox>
+          </GroundOverlay>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_6_0</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.34088646013536561</north>
+                <south>45.24868352097608692</south>
+                <east>4.85101568247617010</east>
+                <west>4.72039620839897012</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_6_0.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.34088646013536561</north>
+                <south>45.24868352097608692</south>
+                <east>4.85101568247617010</east>
+                <west>4.72039620839897012</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_6_1</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.34088646013536561</north>
+                <south>45.24868352097608692</south>
+                <east>4.98163515655337097</east>
+                <west>4.85101568247617010</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_6_1.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.34088646013536561</north>
+                <south>45.24868352097608692</south>
+                <east>4.98163515655337097</east>
+                <west>4.85101568247617010</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+        </Folder>
+        <Folder>
+          <name>kml_image_En Service 20250306_L4_3_1</name>
+          <Region>
+            <LatLonAltBox>
+              <north>45.34088646013536561</north>
+              <south>45.15648058181680113</south>
+              <east>5.24287410470777182</east>
+              <west>4.98163515655337097</west>
+            </LatLonAltBox>
+            <Lod>
+              <minLodPixels>512</minLodPixels>
+              <maxLodPixels>2049</maxLodPixels>
+            </Lod>
+          </Region>
+          <GroundOverlay> <color>7fffffff</color>
+            <drawOrder>4</drawOrder>
+            <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+            <Icon>
+              <href>kml_image_En Service 20250306_L4_3_1.png</href>
+            </Icon>
+            <LatLonBox>
+              <north>45.34088646013536561</north>
+              <south>45.15648058181680113</south>
+              <east>5.24287410470777182</east>
+              <west>4.98163515655337097</west>
+            </LatLonBox>
+          </GroundOverlay>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_6_2</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.34088646013536561</north>
+                <south>45.24868352097608692</south>
+                <east>5.11225463063057095</east>
+                <west>4.98163515655337097</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_6_2.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.34088646013536561</north>
+                <south>45.24868352097608692</south>
+                <east>5.11225463063057095</east>
+                <west>4.98163515655337097</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_6_3</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.34088646013536561</north>
+                <south>45.24868352097608692</south>
+                <east>5.24287410470777182</east>
+                <west>5.11225463063057095</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_6_3.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.34088646013536561</north>
+                <south>45.24868352097608692</south>
+                <east>5.24287410470777182</east>
+                <west>5.11225463063057095</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_7_3</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.24868352097608692</north>
+                <south>45.15648058181680113</south>
+                <east>5.24287410470777182</east>
+                <west>5.11225463063057095</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_7_3.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.24868352097608692</north>
+                <south>45.15648058181680113</south>
+                <east>5.24287410470777182</east>
+                <west>5.11225463063057095</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+        </Folder>
+      </Folder>
+      <Folder>
+        <name>kml_image_En Service 20250306_L3_1_1</name>
+        <Region>
+          <LatLonAltBox>
+            <north>45.52529233845393009</north>
+            <south>45.15648058181680113</south>
+            <east>5.76535200101657352</east>
+            <west>5.24287410470777182</west>
+          </LatLonAltBox>
+          <Lod>
+            <minLodPixels>512</minLodPixels>
+            <maxLodPixels>2049</maxLodPixels>
+          </Lod>
+        </Region>
+        <GroundOverlay> <color>7fffffff</color>
+          <drawOrder>3</drawOrder>
+          <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+          <Icon>
+            <href>kml_image_En Service 20250306_L3_1_1.png</href>
+          </Icon>
+          <LatLonBox>
+            <north>45.52529233845393009</north>
+            <south>45.15648058181680113</south>
+            <east>5.76535200101657352</east>
+            <west>5.24287410470777182</west>
+          </LatLonBox>
+        </GroundOverlay>
+        <Folder>
+          <name>kml_image_En Service 20250306_L4_2_2</name>
+          <Region>
+            <LatLonAltBox>
+              <north>45.52529233845393009</north>
+              <south>45.34088646013536561</south>
+              <east>5.50411305286217267</east>
+              <west>5.24287410470777182</west>
+            </LatLonAltBox>
+            <Lod>
+              <minLodPixels>512</minLodPixels>
+              <maxLodPixels>2049</maxLodPixels>
+            </Lod>
+          </Region>
+          <GroundOverlay> <color>7fffffff</color>
+            <drawOrder>4</drawOrder>
+            <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+            <Icon>
+              <href>kml_image_En Service 20250306_L4_2_2.png</href>
+            </Icon>
+            <LatLonBox>
+              <north>45.52529233845393009</north>
+              <south>45.34088646013536561</south>
+              <east>5.50411305286217267</east>
+              <west>5.24287410470777182</west>
+            </LatLonBox>
+          </GroundOverlay>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_4_4</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.52529233845393009</north>
+                <south>45.43308939929465140</south>
+                <east>5.37349357878497180</east>
+                <west>5.24287410470777182</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_4_4.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.52529233845393009</north>
+                <south>45.43308939929465140</south>
+                <east>5.37349357878497180</east>
+                <west>5.24287410470777182</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_4_5</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.52529233845393009</north>
+                <south>45.43308939929465140</south>
+                <east>5.50411305286217267</east>
+                <west>5.37349357878497180</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_4_5.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.52529233845393009</north>
+                <south>45.43308939929465140</south>
+                <east>5.50411305286217267</east>
+                <west>5.37349357878497180</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_5_4</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.43308939929465140</north>
+                <south>45.34088646013536561</south>
+                <east>5.37349357878497180</east>
+                <west>5.24287410470777182</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_5_4.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.43308939929465140</north>
+                <south>45.34088646013536561</south>
+                <east>5.37349357878497180</east>
+                <west>5.24287410470777182</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_5_5</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.43308939929465140</north>
+                <south>45.34088646013536561</south>
+                <east>5.50411305286217267</east>
+                <west>5.37349357878497180</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_5_5.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.43308939929465140</north>
+                <south>45.34088646013536561</south>
+                <east>5.50411305286217267</east>
+                <west>5.37349357878497180</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+        </Folder>
+        <Folder>
+          <name>kml_image_En Service 20250306_L4_2_3</name>
+          <Region>
+            <LatLonAltBox>
+              <north>45.52529233845393009</north>
+              <south>45.34088646013536561</south>
+              <east>5.76535200101657352</east>
+              <west>5.50411305286217267</west>
+            </LatLonAltBox>
+            <Lod>
+              <minLodPixels>512</minLodPixels>
+              <maxLodPixels>2049</maxLodPixels>
+            </Lod>
+          </Region>
+          <GroundOverlay> <color>7fffffff</color>
+            <drawOrder>4</drawOrder>
+            <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+            <Icon>
+              <href>kml_image_En Service 20250306_L4_2_3.png</href>
+            </Icon>
+            <LatLonBox>
+              <north>45.52529233845393009</north>
+              <south>45.34088646013536561</south>
+              <east>5.76535200101657352</east>
+              <west>5.50411305286217267</west>
+            </LatLonBox>
+          </GroundOverlay>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_4_6</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.52529233845393009</north>
+                <south>45.43308939929465140</south>
+                <east>5.63473252693937265</east>
+                <west>5.50411305286217267</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_4_6.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.52529233845393009</north>
+                <south>45.43308939929465140</south>
+                <east>5.63473252693937265</east>
+                <west>5.50411305286217267</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_4_7</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.52529233845393009</north>
+                <south>45.43308939929465140</south>
+                <east>5.76535200101657352</east>
+                <west>5.63473252693937265</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_4_7.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.52529233845393009</north>
+                <south>45.43308939929465140</south>
+                <east>5.76535200101657352</east>
+                <west>5.63473252693937265</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_5_6</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.43308939929465140</north>
+                <south>45.34088646013536561</south>
+                <east>5.63473252693937265</east>
+                <west>5.50411305286217267</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_5_6.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.43308939929465140</north>
+                <south>45.34088646013536561</south>
+                <east>5.63473252693937265</east>
+                <west>5.50411305286217267</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_5_7</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.43308939929465140</north>
+                <south>45.34088646013536561</south>
+                <east>5.76535200101657352</east>
+                <west>5.63473252693937265</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_5_7.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.43308939929465140</north>
+                <south>45.34088646013536561</south>
+                <east>5.76535200101657352</east>
+                <west>5.63473252693937265</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+        </Folder>
+        <Folder>
+          <name>kml_image_En Service 20250306_L4_3_2</name>
+          <Region>
+            <LatLonAltBox>
+              <north>45.34088646013536561</north>
+              <south>45.15648058181680113</south>
+              <east>5.50411305286217267</east>
+              <west>5.24287410470777182</west>
+            </LatLonAltBox>
+            <Lod>
+              <minLodPixels>512</minLodPixels>
+              <maxLodPixels>2049</maxLodPixels>
+            </Lod>
+          </Region>
+          <GroundOverlay> <color>7fffffff</color>
+            <drawOrder>4</drawOrder>
+            <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+            <Icon>
+              <href>kml_image_En Service 20250306_L4_3_2.png</href>
+            </Icon>
+            <LatLonBox>
+              <north>45.34088646013536561</north>
+              <south>45.15648058181680113</south>
+              <east>5.50411305286217267</east>
+              <west>5.24287410470777182</west>
+            </LatLonBox>
+          </GroundOverlay>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_6_4</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.34088646013536561</north>
+                <south>45.24868352097608692</south>
+                <east>5.37349357878497180</east>
+                <west>5.24287410470777182</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_6_4.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.34088646013536561</north>
+                <south>45.24868352097608692</south>
+                <east>5.37349357878497180</east>
+                <west>5.24287410470777182</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_6_5</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.34088646013536561</north>
+                <south>45.24868352097608692</south>
+                <east>5.50411305286217267</east>
+                <west>5.37349357878497180</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_6_5.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.34088646013536561</north>
+                <south>45.24868352097608692</south>
+                <east>5.50411305286217267</east>
+                <west>5.37349357878497180</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_7_4</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.24868352097608692</north>
+                <south>45.15648058181680113</south>
+                <east>5.37349357878497180</east>
+                <west>5.24287410470777182</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_7_4.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.24868352097608692</north>
+                <south>45.15648058181680113</south>
+                <east>5.37349357878497180</east>
+                <west>5.24287410470777182</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_7_5</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.24868352097608692</north>
+                <south>45.15648058181680113</south>
+                <east>5.50411305286217267</east>
+                <west>5.37349357878497180</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_7_5.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.24868352097608692</north>
+                <south>45.15648058181680113</south>
+                <east>5.50411305286217267</east>
+                <west>5.37349357878497180</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+        </Folder>
+        <Folder>
+          <name>kml_image_En Service 20250306_L4_3_3</name>
+          <Region>
+            <LatLonAltBox>
+              <north>45.34088646013536561</north>
+              <south>45.15648058181680113</south>
+              <east>5.76535200101657352</east>
+              <west>5.50411305286217267</west>
+            </LatLonAltBox>
+            <Lod>
+              <minLodPixels>512</minLodPixels>
+              <maxLodPixels>2049</maxLodPixels>
+            </Lod>
+          </Region>
+          <GroundOverlay> <color>7fffffff</color>
+            <drawOrder>4</drawOrder>
+            <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+            <Icon>
+              <href>kml_image_En Service 20250306_L4_3_3.png</href>
+            </Icon>
+            <LatLonBox>
+              <north>45.34088646013536561</north>
+              <south>45.15648058181680113</south>
+              <east>5.76535200101657352</east>
+              <west>5.50411305286217267</west>
+            </LatLonBox>
+          </GroundOverlay>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_6_6</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.34088646013536561</north>
+                <south>45.24868352097608692</south>
+                <east>5.63473252693937265</east>
+                <west>5.50411305286217267</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_6_6.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.34088646013536561</north>
+                <south>45.24868352097608692</south>
+                <east>5.63473252693937265</east>
+                <west>5.50411305286217267</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_6_7</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.34088646013536561</north>
+                <south>45.24868352097608692</south>
+                <east>5.76535200101657352</east>
+                <west>5.63473252693937265</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_6_7.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.34088646013536561</north>
+                <south>45.24868352097608692</south>
+                <east>5.76535200101657352</east>
+                <west>5.63473252693937265</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_7_6</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.24868352097608692</north>
+                <south>45.15648058181680113</south>
+                <east>5.63473252693937265</east>
+                <west>5.50411305286217267</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_7_6.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.24868352097608692</north>
+                <south>45.15648058181680113</south>
+                <east>5.63473252693937265</east>
+                <west>5.50411305286217267</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_7_7</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.24868352097608692</north>
+                <south>45.15648058181680113</south>
+                <east>5.76535200101657352</east>
+                <west>5.63473252693937265</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_7_7.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.24868352097608692</north>
+                <south>45.15648058181680113</south>
+                <east>5.76535200101657352</east>
+                <west>5.63473252693937265</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+        </Folder>
+      </Folder>
+    </Folder>
+    <Folder>
+      <name>kml_image_En Service 20250306_L2_0_1</name>
+      <Region>
+        <LatLonAltBox>
+          <north>45.89410409509105904</north>
+          <south>45.15648058181680113</south>
+          <east>6.41436751283766249</east>
+          <west>5.76535200101657352</west>
+        </LatLonAltBox>
+        <Lod>
+          <minLodPixels>404</minLodPixels>
+          <maxLodPixels>2049</maxLodPixels>
+        </Lod>
+      </Region>
+      <GroundOverlay> <color>7fffffff</color>
+        <drawOrder>2</drawOrder>
+        <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+        <Icon>
+          <href>kml_image_En Service 20250306_L2_0_1.png</href>
+        </Icon>
+        <LatLonBox>
+          <north>45.89410409509105904</north>
+          <south>45.15648058181680113</south>
+          <east>6.41436751283766249</east>
+          <west>5.76535200101657352</west>
+        </LatLonBox>
+      </GroundOverlay>
+      <Folder>
+        <name>kml_image_En Service 20250306_L3_1_2</name>
+        <Region>
+          <LatLonAltBox>
+            <north>45.52529233845393009</north>
+            <south>45.15648058181680113</south>
+            <east>6.28782989732537434</east>
+            <west>5.76535200101657352</west>
+          </LatLonAltBox>
+          <Lod>
+            <minLodPixels>512</minLodPixels>
+            <maxLodPixels>2049</maxLodPixels>
+          </Lod>
+        </Region>
+        <GroundOverlay> <color>7fffffff</color>
+          <drawOrder>3</drawOrder>
+          <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+          <Icon>
+            <href>kml_image_En Service 20250306_L3_1_2.png</href>
+          </Icon>
+          <LatLonBox>
+            <north>45.52529233845393009</north>
+            <south>45.15648058181680113</south>
+            <east>6.28782989732537434</east>
+            <west>5.76535200101657352</west>
+          </LatLonBox>
+        </GroundOverlay>
+        <Folder>
+          <name>kml_image_En Service 20250306_L4_2_4</name>
+          <Region>
+            <LatLonAltBox>
+              <north>45.52529233845393009</north>
+              <south>45.34088646013536561</south>
+              <east>6.02659094917097349</east>
+              <west>5.76535200101657352</west>
+            </LatLonAltBox>
+            <Lod>
+              <minLodPixels>512</minLodPixels>
+              <maxLodPixels>2049</maxLodPixels>
+            </Lod>
+          </Region>
+          <GroundOverlay> <color>7fffffff</color>
+            <drawOrder>4</drawOrder>
+            <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+            <Icon>
+              <href>kml_image_En Service 20250306_L4_2_4.png</href>
+            </Icon>
+            <LatLonBox>
+              <north>45.52529233845393009</north>
+              <south>45.34088646013536561</south>
+              <east>6.02659094917097349</east>
+              <west>5.76535200101657352</west>
+            </LatLonBox>
+          </GroundOverlay>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_4_9</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.52529233845393009</north>
+                <south>45.43308939929465140</south>
+                <east>6.02659094917097349</east>
+                <west>5.89597147509377351</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_4_9.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.52529233845393009</north>
+                <south>45.43308939929465140</south>
+                <east>6.02659094917097349</east>
+                <west>5.89597147509377351</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_5_8</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.43308939929465140</north>
+                <south>45.34088646013536561</south>
+                <east>5.89597147509377351</east>
+                <west>5.76535200101657352</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_5_8.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.43308939929465140</north>
+                <south>45.34088646013536561</south>
+                <east>5.89597147509377351</east>
+                <west>5.76535200101657352</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_5_9</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.43308939929465140</north>
+                <south>45.34088646013536561</south>
+                <east>6.02659094917097349</east>
+                <west>5.89597147509377351</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_5_9.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.43308939929465140</north>
+                <south>45.34088646013536561</south>
+                <east>6.02659094917097349</east>
+                <west>5.89597147509377351</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+        </Folder>
+        <Folder>
+          <name>kml_image_En Service 20250306_L4_2_5</name>
+          <Region>
+            <LatLonAltBox>
+              <north>45.52529233845393009</north>
+              <south>45.34088646013536561</south>
+              <east>6.28782989732537434</east>
+              <west>6.02659094917097349</west>
+            </LatLonAltBox>
+            <Lod>
+              <minLodPixels>512</minLodPixels>
+              <maxLodPixels>2049</maxLodPixels>
+            </Lod>
+          </Region>
+          <GroundOverlay> <color>7fffffff</color>
+            <drawOrder>4</drawOrder>
+            <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+            <Icon>
+              <href>kml_image_En Service 20250306_L4_2_5.png</href>
+            </Icon>
+            <LatLonBox>
+              <north>45.52529233845393009</north>
+              <south>45.34088646013536561</south>
+              <east>6.28782989732537434</east>
+              <west>6.02659094917097349</west>
+            </LatLonBox>
+          </GroundOverlay>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_4_10</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.52529233845393009</north>
+                <south>45.43308939929465140</south>
+                <east>6.15721042324817436</east>
+                <west>6.02659094917097349</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_4_10.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.52529233845393009</north>
+                <south>45.43308939929465140</south>
+                <east>6.15721042324817436</east>
+                <west>6.02659094917097349</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_5_10</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.43308939929465140</north>
+                <south>45.34088646013536561</south>
+                <east>6.15721042324817436</east>
+                <west>6.02659094917097349</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_5_10.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.43308939929465140</north>
+                <south>45.34088646013536561</south>
+                <east>6.15721042324817436</east>
+                <west>6.02659094917097349</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_5_11</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.43308939929465140</north>
+                <south>45.34088646013536561</south>
+                <east>6.28782989732537434</east>
+                <west>6.15721042324817436</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_5_11.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.43308939929465140</north>
+                <south>45.34088646013536561</south>
+                <east>6.28782989732537434</east>
+                <west>6.15721042324817436</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+        </Folder>
+        <Folder>
+          <name>kml_image_En Service 20250306_L4_3_4</name>
+          <Region>
+            <LatLonAltBox>
+              <north>45.34088646013536561</north>
+              <south>45.15648058181680113</south>
+              <east>6.02659094917097349</east>
+              <west>5.76535200101657352</west>
+            </LatLonAltBox>
+            <Lod>
+              <minLodPixels>512</minLodPixels>
+              <maxLodPixels>2049</maxLodPixels>
+            </Lod>
+          </Region>
+          <GroundOverlay> <color>7fffffff</color>
+            <drawOrder>4</drawOrder>
+            <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+            <Icon>
+              <href>kml_image_En Service 20250306_L4_3_4.png</href>
+            </Icon>
+            <LatLonBox>
+              <north>45.34088646013536561</north>
+              <south>45.15648058181680113</south>
+              <east>6.02659094917097349</east>
+              <west>5.76535200101657352</west>
+            </LatLonBox>
+          </GroundOverlay>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_6_8</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.34088646013536561</north>
+                <south>45.24868352097608692</south>
+                <east>5.89597147509377351</east>
+                <west>5.76535200101657352</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_6_8.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.34088646013536561</north>
+                <south>45.24868352097608692</south>
+                <east>5.89597147509377351</east>
+                <west>5.76535200101657352</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_6_9</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.34088646013536561</north>
+                <south>45.24868352097608692</south>
+                <east>6.02659094917097349</east>
+                <west>5.89597147509377351</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_6_9.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.34088646013536561</north>
+                <south>45.24868352097608692</south>
+                <east>6.02659094917097349</east>
+                <west>5.89597147509377351</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_7_8</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.24868352097608692</north>
+                <south>45.15648058181680113</south>
+                <east>5.89597147509377351</east>
+                <west>5.76535200101657352</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_7_8.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.24868352097608692</north>
+                <south>45.15648058181680113</south>
+                <east>5.89597147509377351</east>
+                <west>5.76535200101657352</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_7_9</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.24868352097608692</north>
+                <south>45.15648058181680113</south>
+                <east>6.02659094917097349</east>
+                <west>5.89597147509377351</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_7_9.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.24868352097608692</north>
+                <south>45.15648058181680113</south>
+                <east>6.02659094917097349</east>
+                <west>5.89597147509377351</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+        </Folder>
+        <Folder>
+          <name>kml_image_En Service 20250306_L4_3_5</name>
+          <Region>
+            <LatLonAltBox>
+              <north>45.34088646013536561</north>
+              <south>45.15648058181680113</south>
+              <east>6.28782989732537434</east>
+              <west>6.02659094917097349</west>
+            </LatLonAltBox>
+            <Lod>
+              <minLodPixels>512</minLodPixels>
+              <maxLodPixels>2049</maxLodPixels>
+            </Lod>
+          </Region>
+          <GroundOverlay> <color>7fffffff</color>
+            <drawOrder>4</drawOrder>
+            <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+            <Icon>
+              <href>kml_image_En Service 20250306_L4_3_5.png</href>
+            </Icon>
+            <LatLonBox>
+              <north>45.34088646013536561</north>
+              <south>45.15648058181680113</south>
+              <east>6.28782989732537434</east>
+              <west>6.02659094917097349</west>
+            </LatLonBox>
+          </GroundOverlay>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_6_10</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.34088646013536561</north>
+                <south>45.24868352097608692</south>
+                <east>6.15721042324817436</east>
+                <west>6.02659094917097349</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_6_10.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.34088646013536561</north>
+                <south>45.24868352097608692</south>
+                <east>6.15721042324817436</east>
+                <west>6.02659094917097349</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_6_11</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.34088646013536561</north>
+                <south>45.24868352097608692</south>
+                <east>6.28782989732537434</east>
+                <west>6.15721042324817436</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_6_11.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.34088646013536561</north>
+                <south>45.24868352097608692</south>
+                <east>6.28782989732537434</east>
+                <west>6.15721042324817436</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_7_10</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.24868352097608692</north>
+                <south>45.15648058181680113</south>
+                <east>6.15721042324817436</east>
+                <west>6.02659094917097349</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_7_10.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.24868352097608692</north>
+                <south>45.15648058181680113</south>
+                <east>6.15721042324817436</east>
+                <west>6.02659094917097349</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_7_11</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.24868352097608692</north>
+                <south>45.15648058181680113</south>
+                <east>6.28782989732537434</east>
+                <west>6.15721042324817436</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_7_11.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.24868352097608692</north>
+                <south>45.15648058181680113</south>
+                <east>6.28782989732537434</east>
+                <west>6.15721042324817436</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+        </Folder>
+      </Folder>
+    </Folder>
+    <Folder>
+      <name>kml_image_En Service 20250306_L2_1_0</name>
+      <Region>
+        <LatLonAltBox>
+          <north>45.15648058181680113</north>
+          <south>44.67997867358348429</south>
+          <east>5.76535200101657352</east>
+          <west>4.72039620839897012</west>
+        </LatLonAltBox>
+        <Lod>
+          <minLodPixels>411</minLodPixels>
+          <maxLodPixels>2049</maxLodPixels>
+        </Lod>
+      </Region>
+      <GroundOverlay> <color>7fffffff</color>
+        <drawOrder>2</drawOrder>
+        <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+        <Icon>
+          <href>kml_image_En Service 20250306_L2_1_0.png</href>
+        </Icon>
+        <LatLonBox>
+          <north>45.15648058181680113</north>
+          <south>44.67997867358348429</south>
+          <east>5.76535200101657352</east>
+          <west>4.72039620839897012</west>
+        </LatLonBox>
+      </GroundOverlay>
+      <Folder>
+        <name>kml_image_En Service 20250306_L3_2_0</name>
+        <Region>
+          <LatLonAltBox>
+            <north>45.15648058181680113</north>
+            <south>44.78766882517967929</south>
+            <east>5.24287410470777182</east>
+            <west>4.72039620839897012</west>
+          </LatLonAltBox>
+          <Lod>
+            <minLodPixels>512</minLodPixels>
+            <maxLodPixels>2049</maxLodPixels>
+          </Lod>
+        </Region>
+        <GroundOverlay> <color>7fffffff</color>
+          <drawOrder>3</drawOrder>
+          <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+          <Icon>
+            <href>kml_image_En Service 20250306_L3_2_0.png</href>
+          </Icon>
+          <LatLonBox>
+            <north>45.15648058181680113</north>
+            <south>44.78766882517967929</south>
+            <east>5.24287410470777182</east>
+            <west>4.72039620839897012</west>
+          </LatLonBox>
+        </GroundOverlay>
+        <Folder>
+          <name>kml_image_En Service 20250306_L4_4_1</name>
+          <Region>
+            <LatLonAltBox>
+              <north>45.15648058181680113</north>
+              <south>44.97207470349824376</south>
+              <east>5.24287410470777182</east>
+              <west>4.98163515655337097</west>
+            </LatLonAltBox>
+            <Lod>
+              <minLodPixels>512</minLodPixels>
+              <maxLodPixels>2049</maxLodPixels>
+            </Lod>
+          </Region>
+          <GroundOverlay> <color>7fffffff</color>
+            <drawOrder>4</drawOrder>
+            <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+            <Icon>
+              <href>kml_image_En Service 20250306_L4_4_1.png</href>
+            </Icon>
+            <LatLonBox>
+              <north>45.15648058181680113</north>
+              <south>44.97207470349824376</south>
+              <east>5.24287410470777182</east>
+              <west>4.98163515655337097</west>
+            </LatLonBox>
+          </GroundOverlay>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_8_3</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.15648058181680113</north>
+                <south>45.06427764265752245</south>
+                <east>5.24287410470777182</east>
+                <west>5.11225463063057095</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_8_3.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.15648058181680113</north>
+                <south>45.06427764265752245</south>
+                <east>5.24287410470777182</east>
+                <west>5.11225463063057095</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+        </Folder>
+      </Folder>
+      <Folder>
+        <name>kml_image_En Service 20250306_L3_2_1</name>
+        <Region>
+          <LatLonAltBox>
+            <north>45.15648058181680113</north>
+            <south>44.78766882517967929</south>
+            <east>5.76535200101657352</east>
+            <west>5.24287410470777182</west>
+          </LatLonAltBox>
+          <Lod>
+            <minLodPixels>512</minLodPixels>
+            <maxLodPixels>2049</maxLodPixels>
+          </Lod>
+        </Region>
+        <GroundOverlay> <color>7fffffff</color>
+          <drawOrder>3</drawOrder>
+          <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+          <Icon>
+            <href>kml_image_En Service 20250306_L3_2_1.png</href>
+          </Icon>
+          <LatLonBox>
+            <north>45.15648058181680113</north>
+            <south>44.78766882517967929</south>
+            <east>5.76535200101657352</east>
+            <west>5.24287410470777182</west>
+          </LatLonBox>
+        </GroundOverlay>
+        <Folder>
+          <name>kml_image_En Service 20250306_L4_4_2</name>
+          <Region>
+            <LatLonAltBox>
+              <north>45.15648058181680113</north>
+              <south>44.97207470349824376</south>
+              <east>5.50411305286217267</east>
+              <west>5.24287410470777182</west>
+            </LatLonAltBox>
+            <Lod>
+              <minLodPixels>512</minLodPixels>
+              <maxLodPixels>2049</maxLodPixels>
+            </Lod>
+          </Region>
+          <GroundOverlay> <color>7fffffff</color>
+            <drawOrder>4</drawOrder>
+            <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+            <Icon>
+              <href>kml_image_En Service 20250306_L4_4_2.png</href>
+            </Icon>
+            <LatLonBox>
+              <north>45.15648058181680113</north>
+              <south>44.97207470349824376</south>
+              <east>5.50411305286217267</east>
+              <west>5.24287410470777182</west>
+            </LatLonBox>
+          </GroundOverlay>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_8_4</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.15648058181680113</north>
+                <south>45.06427764265752245</south>
+                <east>5.37349357878497180</east>
+                <west>5.24287410470777182</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_8_4.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.15648058181680113</north>
+                <south>45.06427764265752245</south>
+                <east>5.37349357878497180</east>
+                <west>5.24287410470777182</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_8_5</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.15648058181680113</north>
+                <south>45.06427764265752245</south>
+                <east>5.50411305286217267</east>
+                <west>5.37349357878497180</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_8_5.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.15648058181680113</north>
+                <south>45.06427764265752245</south>
+                <east>5.50411305286217267</east>
+                <west>5.37349357878497180</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_9_4</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.06427764265752245</north>
+                <south>44.97207470349824376</south>
+                <east>5.37349357878497180</east>
+                <west>5.24287410470777182</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_9_4.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.06427764265752245</north>
+                <south>44.97207470349824376</south>
+                <east>5.37349357878497180</east>
+                <west>5.24287410470777182</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_9_5</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.06427764265752245</north>
+                <south>44.97207470349824376</south>
+                <east>5.50411305286217267</east>
+                <west>5.37349357878497180</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_9_5.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.06427764265752245</north>
+                <south>44.97207470349824376</south>
+                <east>5.50411305286217267</east>
+                <west>5.37349357878497180</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+        </Folder>
+        <Folder>
+          <name>kml_image_En Service 20250306_L4_4_3</name>
+          <Region>
+            <LatLonAltBox>
+              <north>45.15648058181680113</north>
+              <south>44.97207470349824376</south>
+              <east>5.76535200101657352</east>
+              <west>5.50411305286217267</west>
+            </LatLonAltBox>
+            <Lod>
+              <minLodPixels>512</minLodPixels>
+              <maxLodPixels>2049</maxLodPixels>
+            </Lod>
+          </Region>
+          <GroundOverlay> <color>7fffffff</color>
+            <drawOrder>4</drawOrder>
+            <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+            <Icon>
+              <href>kml_image_En Service 20250306_L4_4_3.png</href>
+            </Icon>
+            <LatLonBox>
+              <north>45.15648058181680113</north>
+              <south>44.97207470349824376</south>
+              <east>5.76535200101657352</east>
+              <west>5.50411305286217267</west>
+            </LatLonBox>
+          </GroundOverlay>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_8_6</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.15648058181680113</north>
+                <south>45.06427764265752245</south>
+                <east>5.63473252693937265</east>
+                <west>5.50411305286217267</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_8_6.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.15648058181680113</north>
+                <south>45.06427764265752245</south>
+                <east>5.63473252693937265</east>
+                <west>5.50411305286217267</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_8_7</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.15648058181680113</north>
+                <south>45.06427764265752245</south>
+                <east>5.76535200101657352</east>
+                <west>5.63473252693937265</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_8_7.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.15648058181680113</north>
+                <south>45.06427764265752245</south>
+                <east>5.76535200101657352</east>
+                <west>5.63473252693937265</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_9_6</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.06427764265752245</north>
+                <south>44.97207470349824376</south>
+                <east>5.63473252693937265</east>
+                <west>5.50411305286217267</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_9_6.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.06427764265752245</north>
+                <south>44.97207470349824376</south>
+                <east>5.63473252693937265</east>
+                <west>5.50411305286217267</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_9_7</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.06427764265752245</north>
+                <south>44.97207470349824376</south>
+                <east>5.76535200101657352</east>
+                <west>5.63473252693937265</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_9_7.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.06427764265752245</north>
+                <south>44.97207470349824376</south>
+                <east>5.76535200101657352</east>
+                <west>5.63473252693937265</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+        </Folder>
+        <Folder>
+          <name>kml_image_En Service 20250306_L4_5_2</name>
+          <Region>
+            <LatLonAltBox>
+              <north>44.97207470349824376</north>
+              <south>44.78766882517967929</south>
+              <east>5.50411305286217267</east>
+              <west>5.24287410470777182</west>
+            </LatLonAltBox>
+            <Lod>
+              <minLodPixels>512</minLodPixels>
+              <maxLodPixels>2049</maxLodPixels>
+            </Lod>
+          </Region>
+          <GroundOverlay> <color>7fffffff</color>
+            <drawOrder>4</drawOrder>
+            <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+            <Icon>
+              <href>kml_image_En Service 20250306_L4_5_2.png</href>
+            </Icon>
+            <LatLonBox>
+              <north>44.97207470349824376</north>
+              <south>44.78766882517967929</south>
+              <east>5.50411305286217267</east>
+              <west>5.24287410470777182</west>
+            </LatLonBox>
+          </GroundOverlay>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_10_5</name>
+            <Region>
+              <LatLonAltBox>
+                <north>44.97207470349824376</north>
+                <south>44.87987176433895797</south>
+                <east>5.50411305286217267</east>
+                <west>5.37349357878497180</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_10_5.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>44.97207470349824376</north>
+                <south>44.87987176433895797</south>
+                <east>5.50411305286217267</east>
+                <west>5.37349357878497180</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_11_5</name>
+            <Region>
+              <LatLonAltBox>
+                <north>44.87987176433895797</north>
+                <south>44.78766882517967929</south>
+                <east>5.50411305286217267</east>
+                <west>5.37349357878497180</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_11_5.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>44.87987176433895797</north>
+                <south>44.78766882517967929</south>
+                <east>5.50411305286217267</east>
+                <west>5.37349357878497180</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+        </Folder>
+        <Folder>
+          <name>kml_image_En Service 20250306_L4_5_3</name>
+          <Region>
+            <LatLonAltBox>
+              <north>44.97207470349824376</north>
+              <south>44.78766882517967929</south>
+              <east>5.76535200101657352</east>
+              <west>5.50411305286217267</west>
+            </LatLonAltBox>
+            <Lod>
+              <minLodPixels>512</minLodPixels>
+              <maxLodPixels>2049</maxLodPixels>
+            </Lod>
+          </Region>
+          <GroundOverlay> <color>7fffffff</color>
+            <drawOrder>4</drawOrder>
+            <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+            <Icon>
+              <href>kml_image_En Service 20250306_L4_5_3.png</href>
+            </Icon>
+            <LatLonBox>
+              <north>44.97207470349824376</north>
+              <south>44.78766882517967929</south>
+              <east>5.76535200101657352</east>
+              <west>5.50411305286217267</west>
+            </LatLonBox>
+          </GroundOverlay>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_10_6</name>
+            <Region>
+              <LatLonAltBox>
+                <north>44.97207470349824376</north>
+                <south>44.87987176433895797</south>
+                <east>5.63473252693937265</east>
+                <west>5.50411305286217267</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_10_6.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>44.97207470349824376</north>
+                <south>44.87987176433895797</south>
+                <east>5.63473252693937265</east>
+                <west>5.50411305286217267</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_10_7</name>
+            <Region>
+              <LatLonAltBox>
+                <north>44.97207470349824376</north>
+                <south>44.87987176433895797</south>
+                <east>5.76535200101657352</east>
+                <west>5.63473252693937265</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_10_7.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>44.97207470349824376</north>
+                <south>44.87987176433895797</south>
+                <east>5.76535200101657352</east>
+                <west>5.63473252693937265</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_11_6</name>
+            <Region>
+              <LatLonAltBox>
+                <north>44.87987176433895797</north>
+                <south>44.78766882517967929</south>
+                <east>5.63473252693937265</east>
+                <west>5.50411305286217267</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_11_6.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>44.87987176433895797</north>
+                <south>44.78766882517967929</south>
+                <east>5.63473252693937265</east>
+                <west>5.50411305286217267</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_11_7</name>
+            <Region>
+              <LatLonAltBox>
+                <north>44.87987176433895797</north>
+                <south>44.78766882517967929</south>
+                <east>5.76535200101657352</east>
+                <west>5.63473252693937265</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_11_7.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>44.87987176433895797</north>
+                <south>44.78766882517967929</south>
+                <east>5.76535200101657352</east>
+                <west>5.63473252693937265</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+        </Folder>
+      </Folder>
+      <Folder>
+        <name>kml_image_En Service 20250306_L3_3_1</name>
+        <Region>
+          <LatLonAltBox>
+            <north>44.78766882517967929</north>
+            <south>44.67997867358348429</south>
+            <east>5.76535200101657352</east>
+            <west>5.24287410470777182</west>
+          </LatLonAltBox>
+          <Lod>
+            <minLodPixels>277</minLodPixels>
+            <maxLodPixels>2049</maxLodPixels>
+          </Lod>
+        </Region>
+        <GroundOverlay> <color>7fffffff</color>
+          <drawOrder>3</drawOrder>
+          <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+          <Icon>
+            <href>kml_image_En Service 20250306_L3_3_1.png</href>
+          </Icon>
+          <LatLonBox>
+            <north>44.78766882517967929</north>
+            <south>44.67997867358348429</south>
+            <east>5.76535200101657352</east>
+            <west>5.24287410470777182</west>
+          </LatLonBox>
+        </GroundOverlay>
+        <Folder>
+          <name>kml_image_En Service 20250306_L4_6_3</name>
+          <Region>
+            <LatLonAltBox>
+              <north>44.78766882517967929</north>
+              <south>44.67997867358348429</south>
+              <east>5.76535200101657352</east>
+              <west>5.50411305286217267</west>
+            </LatLonAltBox>
+            <Lod>
+              <minLodPixels>391</minLodPixels>
+              <maxLodPixels>2049</maxLodPixels>
+            </Lod>
+          </Region>
+          <GroundOverlay> <color>7fffffff</color>
+            <drawOrder>4</drawOrder>
+            <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+            <Icon>
+              <href>kml_image_En Service 20250306_L4_6_3.png</href>
+            </Icon>
+            <LatLonBox>
+              <north>44.78766882517967929</north>
+              <south>44.67997867358348429</south>
+              <east>5.76535200101657352</east>
+              <west>5.50411305286217267</west>
+            </LatLonBox>
+          </GroundOverlay>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_12_6</name>
+            <Region>
+              <LatLonAltBox>
+                <north>44.78766882517967929</north>
+                <south>44.69546588602039350</south>
+                <east>5.63473252693937265</east>
+                <west>5.50411305286217267</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_12_6.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>44.78766882517967929</north>
+                <south>44.69546588602039350</south>
+                <east>5.63473252693937265</east>
+                <west>5.50411305286217267</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_12_7</name>
+            <Region>
+              <LatLonAltBox>
+                <north>44.78766882517967929</north>
+                <south>44.69546588602039350</south>
+                <east>5.76535200101657352</east>
+                <west>5.63473252693937265</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_12_7.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>44.78766882517967929</north>
+                <south>44.69546588602039350</south>
+                <east>5.76535200101657352</east>
+                <west>5.63473252693937265</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+        </Folder>
+      </Folder>
+    </Folder>
+    <Folder>
+      <name>kml_image_En Service 20250306_L2_1_1</name>
+      <Region>
+        <LatLonAltBox>
+          <north>45.15648058181680113</north>
+          <south>44.67997867358348429</south>
+          <east>6.41436751283766249</east>
+          <west>5.76535200101657352</west>
+        </LatLonAltBox>
+        <Lod>
+          <minLodPixels>324</minLodPixels>
+          <maxLodPixels>2049</maxLodPixels>
+        </Lod>
+      </Region>
+      <GroundOverlay> <color>7fffffff</color>
+        <drawOrder>2</drawOrder>
+        <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+        <Icon>
+          <href>kml_image_En Service 20250306_L2_1_1.png</href>
+        </Icon>
+        <LatLonBox>
+          <north>45.15648058181680113</north>
+          <south>44.67997867358348429</south>
+          <east>6.41436751283766249</east>
+          <west>5.76535200101657352</west>
+        </LatLonBox>
+      </GroundOverlay>
+      <Folder>
+        <name>kml_image_En Service 20250306_L3_2_2</name>
+        <Region>
+          <LatLonAltBox>
+            <north>45.15648058181680113</north>
+            <south>44.78766882517967929</south>
+            <east>6.28782989732537434</east>
+            <west>5.76535200101657352</west>
+          </LatLonAltBox>
+          <Lod>
+            <minLodPixels>512</minLodPixels>
+            <maxLodPixels>2049</maxLodPixels>
+          </Lod>
+        </Region>
+        <GroundOverlay> <color>7fffffff</color>
+          <drawOrder>3</drawOrder>
+          <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+          <Icon>
+            <href>kml_image_En Service 20250306_L3_2_2.png</href>
+          </Icon>
+          <LatLonBox>
+            <north>45.15648058181680113</north>
+            <south>44.78766882517967929</south>
+            <east>6.28782989732537434</east>
+            <west>5.76535200101657352</west>
+          </LatLonBox>
+        </GroundOverlay>
+        <Folder>
+          <name>kml_image_En Service 20250306_L4_4_4</name>
+          <Region>
+            <LatLonAltBox>
+              <north>45.15648058181680113</north>
+              <south>44.97207470349824376</south>
+              <east>6.02659094917097349</east>
+              <west>5.76535200101657352</west>
+            </LatLonAltBox>
+            <Lod>
+              <minLodPixels>512</minLodPixels>
+              <maxLodPixels>2049</maxLodPixels>
+            </Lod>
+          </Region>
+          <GroundOverlay> <color>7fffffff</color>
+            <drawOrder>4</drawOrder>
+            <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+            <Icon>
+              <href>kml_image_En Service 20250306_L4_4_4.png</href>
+            </Icon>
+            <LatLonBox>
+              <north>45.15648058181680113</north>
+              <south>44.97207470349824376</south>
+              <east>6.02659094917097349</east>
+              <west>5.76535200101657352</west>
+            </LatLonBox>
+          </GroundOverlay>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_8_8</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.15648058181680113</north>
+                <south>45.06427764265752245</south>
+                <east>5.89597147509377351</east>
+                <west>5.76535200101657352</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_8_8.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.15648058181680113</north>
+                <south>45.06427764265752245</south>
+                <east>5.89597147509377351</east>
+                <west>5.76535200101657352</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_8_9</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.15648058181680113</north>
+                <south>45.06427764265752245</south>
+                <east>6.02659094917097349</east>
+                <west>5.89597147509377351</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_8_9.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.15648058181680113</north>
+                <south>45.06427764265752245</south>
+                <east>6.02659094917097349</east>
+                <west>5.89597147509377351</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_9_8</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.06427764265752245</north>
+                <south>44.97207470349824376</south>
+                <east>5.89597147509377351</east>
+                <west>5.76535200101657352</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_9_8.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.06427764265752245</north>
+                <south>44.97207470349824376</south>
+                <east>5.89597147509377351</east>
+                <west>5.76535200101657352</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_9_9</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.06427764265752245</north>
+                <south>44.97207470349824376</south>
+                <east>6.02659094917097349</east>
+                <west>5.89597147509377351</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_9_9.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.06427764265752245</north>
+                <south>44.97207470349824376</south>
+                <east>6.02659094917097349</east>
+                <west>5.89597147509377351</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+        </Folder>
+        <Folder>
+          <name>kml_image_En Service 20250306_L4_4_5</name>
+          <Region>
+            <LatLonAltBox>
+              <north>45.15648058181680113</north>
+              <south>44.97207470349824376</south>
+              <east>6.28782989732537434</east>
+              <west>6.02659094917097349</west>
+            </LatLonAltBox>
+            <Lod>
+              <minLodPixels>512</minLodPixels>
+              <maxLodPixels>2049</maxLodPixels>
+            </Lod>
+          </Region>
+          <GroundOverlay> <color>7fffffff</color>
+            <drawOrder>4</drawOrder>
+            <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+            <Icon>
+              <href>kml_image_En Service 20250306_L4_4_5.png</href>
+            </Icon>
+            <LatLonBox>
+              <north>45.15648058181680113</north>
+              <south>44.97207470349824376</south>
+              <east>6.28782989732537434</east>
+              <west>6.02659094917097349</west>
+            </LatLonBox>
+          </GroundOverlay>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_8_10</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.15648058181680113</north>
+                <south>45.06427764265752245</south>
+                <east>6.15721042324817436</east>
+                <west>6.02659094917097349</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_8_10.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.15648058181680113</north>
+                <south>45.06427764265752245</south>
+                <east>6.15721042324817436</east>
+                <west>6.02659094917097349</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_8_11</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.15648058181680113</north>
+                <south>45.06427764265752245</south>
+                <east>6.28782989732537434</east>
+                <west>6.15721042324817436</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_8_11.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.15648058181680113</north>
+                <south>45.06427764265752245</south>
+                <east>6.28782989732537434</east>
+                <west>6.15721042324817436</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_9_10</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.06427764265752245</north>
+                <south>44.97207470349824376</south>
+                <east>6.15721042324817436</east>
+                <west>6.02659094917097349</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_9_10.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.06427764265752245</north>
+                <south>44.97207470349824376</south>
+                <east>6.15721042324817436</east>
+                <west>6.02659094917097349</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_9_11</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.06427764265752245</north>
+                <south>44.97207470349824376</south>
+                <east>6.28782989732537434</east>
+                <west>6.15721042324817436</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_9_11.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.06427764265752245</north>
+                <south>44.97207470349824376</south>
+                <east>6.28782989732537434</east>
+                <west>6.15721042324817436</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+        </Folder>
+        <Folder>
+          <name>kml_image_En Service 20250306_L4_5_4</name>
+          <Region>
+            <LatLonAltBox>
+              <north>44.97207470349824376</north>
+              <south>44.78766882517967929</south>
+              <east>6.02659094917097349</east>
+              <west>5.76535200101657352</west>
+            </LatLonAltBox>
+            <Lod>
+              <minLodPixels>512</minLodPixels>
+              <maxLodPixels>2049</maxLodPixels>
+            </Lod>
+          </Region>
+          <GroundOverlay> <color>7fffffff</color>
+            <drawOrder>4</drawOrder>
+            <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+            <Icon>
+              <href>kml_image_En Service 20250306_L4_5_4.png</href>
+            </Icon>
+            <LatLonBox>
+              <north>44.97207470349824376</north>
+              <south>44.78766882517967929</south>
+              <east>6.02659094917097349</east>
+              <west>5.76535200101657352</west>
+            </LatLonBox>
+          </GroundOverlay>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_10_8</name>
+            <Region>
+              <LatLonAltBox>
+                <north>44.97207470349824376</north>
+                <south>44.87987176433895797</south>
+                <east>5.89597147509377351</east>
+                <west>5.76535200101657352</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_10_8.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>44.97207470349824376</north>
+                <south>44.87987176433895797</south>
+                <east>5.89597147509377351</east>
+                <west>5.76535200101657352</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_10_9</name>
+            <Region>
+              <LatLonAltBox>
+                <north>44.97207470349824376</north>
+                <south>44.87987176433895797</south>
+                <east>6.02659094917097349</east>
+                <west>5.89597147509377351</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_10_9.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>44.97207470349824376</north>
+                <south>44.87987176433895797</south>
+                <east>6.02659094917097349</east>
+                <west>5.89597147509377351</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_11_8</name>
+            <Region>
+              <LatLonAltBox>
+                <north>44.87987176433895797</north>
+                <south>44.78766882517967929</south>
+                <east>5.89597147509377351</east>
+                <west>5.76535200101657352</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_11_8.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>44.87987176433895797</north>
+                <south>44.78766882517967929</south>
+                <east>5.89597147509377351</east>
+                <west>5.76535200101657352</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_11_9</name>
+            <Region>
+              <LatLonAltBox>
+                <north>44.87987176433895797</north>
+                <south>44.78766882517967929</south>
+                <east>6.02659094917097349</east>
+                <west>5.89597147509377351</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_11_9.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>44.87987176433895797</north>
+                <south>44.78766882517967929</south>
+                <east>6.02659094917097349</east>
+                <west>5.89597147509377351</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+        </Folder>
+        <Folder>
+          <name>kml_image_En Service 20250306_L4_5_5</name>
+          <Region>
+            <LatLonAltBox>
+              <north>44.97207470349824376</north>
+              <south>44.78766882517967929</south>
+              <east>6.28782989732537434</east>
+              <west>6.02659094917097349</west>
+            </LatLonAltBox>
+            <Lod>
+              <minLodPixels>512</minLodPixels>
+              <maxLodPixels>2049</maxLodPixels>
+            </Lod>
+          </Region>
+          <GroundOverlay> <color>7fffffff</color>
+            <drawOrder>4</drawOrder>
+            <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+            <Icon>
+              <href>kml_image_En Service 20250306_L4_5_5.png</href>
+            </Icon>
+            <LatLonBox>
+              <north>44.97207470349824376</north>
+              <south>44.78766882517967929</south>
+              <east>6.28782989732537434</east>
+              <west>6.02659094917097349</west>
+            </LatLonBox>
+          </GroundOverlay>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_10_10</name>
+            <Region>
+              <LatLonAltBox>
+                <north>44.97207470349824376</north>
+                <south>44.87987176433895797</south>
+                <east>6.15721042324817436</east>
+                <west>6.02659094917097349</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_10_10.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>44.97207470349824376</north>
+                <south>44.87987176433895797</south>
+                <east>6.15721042324817436</east>
+                <west>6.02659094917097349</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_10_11</name>
+            <Region>
+              <LatLonAltBox>
+                <north>44.97207470349824376</north>
+                <south>44.87987176433895797</south>
+                <east>6.28782989732537434</east>
+                <west>6.15721042324817436</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_10_11.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>44.97207470349824376</north>
+                <south>44.87987176433895797</south>
+                <east>6.28782989732537434</east>
+                <west>6.15721042324817436</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_11_10</name>
+            <Region>
+              <LatLonAltBox>
+                <north>44.87987176433895797</north>
+                <south>44.78766882517967929</south>
+                <east>6.15721042324817436</east>
+                <west>6.02659094917097349</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_11_10.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>44.87987176433895797</north>
+                <south>44.78766882517967929</south>
+                <east>6.15721042324817436</east>
+                <west>6.02659094917097349</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_11_11</name>
+            <Region>
+              <LatLonAltBox>
+                <north>44.87987176433895797</north>
+                <south>44.78766882517967929</south>
+                <east>6.28782989732537434</east>
+                <west>6.15721042324817436</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_11_11.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>44.87987176433895797</north>
+                <south>44.78766882517967929</south>
+                <east>6.28782989732537434</east>
+                <west>6.15721042324817436</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+        </Folder>
+      </Folder>
+      <Folder>
+        <name>kml_image_En Service 20250306_L3_2_3</name>
+        <Region>
+          <LatLonAltBox>
+            <north>45.15648058181680113</north>
+            <south>44.78766882517967929</south>
+            <east>6.41436751283766249</east>
+            <west>6.28782989732537434</west>
+          </LatLonAltBox>
+          <Lod>
+            <minLodPixels>252</minLodPixels>
+            <maxLodPixels>2049</maxLodPixels>
+          </Lod>
+        </Region>
+        <GroundOverlay> <color>7fffffff</color>
+          <drawOrder>3</drawOrder>
+          <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+          <Icon>
+            <href>kml_image_En Service 20250306_L3_2_3.png</href>
+          </Icon>
+          <LatLonBox>
+            <north>45.15648058181680113</north>
+            <south>44.78766882517967929</south>
+            <east>6.41436751283766249</east>
+            <west>6.28782989732537434</west>
+          </LatLonBox>
+        </GroundOverlay>
+        <Folder>
+          <name>kml_image_En Service 20250306_L4_4_6</name>
+          <Region>
+            <LatLonAltBox>
+              <north>45.15648058181680113</north>
+              <south>44.97207470349824376</south>
+              <east>6.41436751283766249</east>
+              <west>6.28782989732537434</west>
+            </LatLonAltBox>
+            <Lod>
+              <minLodPixels>356</minLodPixels>
+              <maxLodPixels>2049</maxLodPixels>
+            </Lod>
+          </Region>
+          <GroundOverlay> <color>7fffffff</color>
+            <drawOrder>4</drawOrder>
+            <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+            <Icon>
+              <href>kml_image_En Service 20250306_L4_4_6.png</href>
+            </Icon>
+            <LatLonBox>
+              <north>45.15648058181680113</north>
+              <south>44.97207470349824376</south>
+              <east>6.41436751283766249</east>
+              <west>6.28782989732537434</west>
+            </LatLonBox>
+          </GroundOverlay>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_9_12</name>
+            <Region>
+              <LatLonAltBox>
+                <north>45.06427764265752245</north>
+                <south>44.97207470349824376</south>
+                <east>6.41436751283766249</east>
+                <west>6.28782989732537434</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>504</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_9_12.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>45.06427764265752245</north>
+                <south>44.97207470349824376</south>
+                <east>6.41436751283766249</east>
+                <west>6.28782989732537434</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+        </Folder>
+        <Folder>
+          <name>kml_image_En Service 20250306_L4_5_6</name>
+          <Region>
+            <LatLonAltBox>
+              <north>44.97207470349824376</north>
+              <south>44.78766882517967929</south>
+              <east>6.41436751283766249</east>
+              <west>6.28782989732537434</west>
+            </LatLonAltBox>
+            <Lod>
+              <minLodPixels>356</minLodPixels>
+              <maxLodPixels>2049</maxLodPixels>
+            </Lod>
+          </Region>
+          <GroundOverlay> <color>7fffffff</color>
+            <drawOrder>4</drawOrder>
+            <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+            <Icon>
+              <href>kml_image_En Service 20250306_L4_5_6.png</href>
+            </Icon>
+            <LatLonBox>
+              <north>44.97207470349824376</north>
+              <south>44.78766882517967929</south>
+              <east>6.41436751283766249</east>
+              <west>6.28782989732537434</west>
+            </LatLonBox>
+          </GroundOverlay>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_10_12</name>
+            <Region>
+              <LatLonAltBox>
+                <north>44.97207470349824376</north>
+                <south>44.87987176433895797</south>
+                <east>6.41436751283766249</east>
+                <west>6.28782989732537434</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>504</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_10_12.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>44.97207470349824376</north>
+                <south>44.87987176433895797</south>
+                <east>6.41436751283766249</east>
+                <west>6.28782989732537434</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+        </Folder>
+      </Folder>
+      <Folder>
+        <name>kml_image_En Service 20250306_L3_3_2</name>
+        <Region>
+          <LatLonAltBox>
+            <north>44.78766882517967929</north>
+            <south>44.67997867358348429</south>
+            <east>6.28782989732537434</east>
+            <west>5.76535200101657352</west>
+          </LatLonAltBox>
+          <Lod>
+            <minLodPixels>277</minLodPixels>
+            <maxLodPixels>2049</maxLodPixels>
+          </Lod>
+        </Region>
+        <GroundOverlay> <color>7fffffff</color>
+          <drawOrder>3</drawOrder>
+          <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+          <Icon>
+            <href>kml_image_En Service 20250306_L3_3_2.png</href>
+          </Icon>
+          <LatLonBox>
+            <north>44.78766882517967929</north>
+            <south>44.67997867358348429</south>
+            <east>6.28782989732537434</east>
+            <west>5.76535200101657352</west>
+          </LatLonBox>
+        </GroundOverlay>
+        <Folder>
+          <name>kml_image_En Service 20250306_L4_6_4</name>
+          <Region>
+            <LatLonAltBox>
+              <north>44.78766882517967929</north>
+              <south>44.67997867358348429</south>
+              <east>6.02659094917097349</east>
+              <west>5.76535200101657352</west>
+            </LatLonAltBox>
+            <Lod>
+              <minLodPixels>391</minLodPixels>
+              <maxLodPixels>2049</maxLodPixels>
+            </Lod>
+          </Region>
+          <GroundOverlay> <color>7fffffff</color>
+            <drawOrder>4</drawOrder>
+            <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+            <Icon>
+              <href>kml_image_En Service 20250306_L4_6_4.png</href>
+            </Icon>
+            <LatLonBox>
+              <north>44.78766882517967929</north>
+              <south>44.67997867358348429</south>
+              <east>6.02659094917097349</east>
+              <west>5.76535200101657352</west>
+            </LatLonBox>
+          </GroundOverlay>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_12_8</name>
+            <Region>
+              <LatLonAltBox>
+                <north>44.78766882517967929</north>
+                <south>44.69546588602039350</south>
+                <east>5.89597147509377351</east>
+                <west>5.76535200101657352</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_12_8.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>44.78766882517967929</north>
+                <south>44.69546588602039350</south>
+                <east>5.89597147509377351</east>
+                <west>5.76535200101657352</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+          <Folder>
+            <name>kml_image_En Service 20250306_L5_12_9</name>
+            <Region>
+              <LatLonAltBox>
+                <north>44.78766882517967929</north>
+                <south>44.69546588602039350</south>
+                <east>6.02659094917097349</east>
+                <west>5.89597147509377351</west>
+              </LatLonAltBox>
+              <Lod>
+                <minLodPixels>512</minLodPixels>
+                <maxLodPixels>-1</maxLodPixels>
+              </Lod>
+            </Region>
+            <GroundOverlay> <color>7fffffff</color>
+              <drawOrder>5</drawOrder>
+              <gx:altitudeMode>clampToSeaFloor</gx:altitudeMode>
+              <Icon>
+                <href>kml_image_En Service 20250306_L5_12_9.png</href>
+              </Icon>
+              <LatLonBox>
+                <north>44.78766882517967929</north>
+                <south>44.69546588602039350</south>
+                <east>6.02659094917097349</east>
+                <west>5.89597147509377351</west>
+              </LatLonBox>
+            </GroundOverlay>
+          </Folder>
+        </Folder>
+      </Folder>
+    </Folder>
+  </Folder>
+</Document>
+</kml>
