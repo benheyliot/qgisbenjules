@@ -2,7 +2,7 @@ from dash import html, dcc
 import dash_bootstrap_components as dbc
 import dash_leaflet as dl
 
-def serve_layout():
+def serve_layout(static_overlays):
     return dbc.Container([
         dbc.Row([
             dbc.Col([
@@ -34,7 +34,8 @@ def serve_layout():
                                [dl.BaseLayer(dl.TileLayer(), name="OpenStreetMap", checked=True)] +
                                [dl.Overlay(dl.LayerGroup(id='markers'), name="Markers", checked=True)] +
                                [dl.Overlay(dl.LayerGroup(id='coverages'), name="Coverages", checked=True)] +
-                               [dl.Overlay(dl.LayerGroup(id='rasters'), name="Rasters", checked=True)]
+                               [dl.Overlay(dl.LayerGroup(id='rasters'), name="Rasters", checked=True)] +
+                               [dl.Overlay(dl.LayerGroup(children=static_overlays), name="Static Overlays", checked=True)]
                            )
                        ])
             ], width=9)

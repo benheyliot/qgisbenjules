@@ -15,7 +15,48 @@ from app.utils.kml_to_geojson import kml_or_kmz_to_gdf
 from app.utils.raster_to_tile import tiff_to_image_overlay
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
-app.layout = serve_layout
+
+static_overlays = []
+for file in os.listdir('app/data'):
+    if file.endswith(('.kml', '.kmz', '.geojson', '.json', '.shp', '.tif', '.tiff')):
+        with open(os.path.join('app/data', file), 'rb') as f:
+            file_bytes = f.read()
+            ext = os.path.splitext(file)[1].lower()
+            if ext in ['.kml', '.kmz']:
+                gdf = kml_or_kmz_to_gdf(file_bytes, file)
+                for _, row in gdf.iterrows():
+                    if row.geometry.geom_type == "Polygon":
+                        static_overlays.append(dl.Polygon(positions=[list(row.geometry.exterior.coords)]))
+                    elif row.geometry.geom_type == "Point":
+                        static_overlays.append(dl.Marker(position=[row.geometry.y, row.geometry.x]))
+            elif ext in ['.geojson', '.json']:
+                gdf = gpd.read_file(io.BytesIO(file_bytes))
+                for _, row in gdf.iterrows():
+                    if row.geometry.geom_type == "Polygon":
+                        static_overlays.append(dl.Polygon(positions=[list(row.geometry.exterior.coords)]))
+                    elif row.geometry.geom_type == "Point":
+                        static_overlays.append(dl.Marker(position=[row.geometry.y, row.geometry.x]))
+            elif ext == '.shp':
+                with tempfile.TemporaryDirectory() as tmpdir:
+                    with open(os.path.join(tmpdir, file), 'wb') as f:
+                        f.write(file_bytes)
+                    gdf = gpd.read_file(os.path.join(tmpdir, file))
+                for _, row in gdf.iterrows():
+                    if row.geometry.geom_type == "Polygon":
+                        static_overlays.append(dl.Polygon(positions=[list(row.geometry.exterior.coords)]))
+                    elif row.geometry.geom_type == "Point":
+                        static_overlays.append(dl.Marker(position=[row.geometry.y, row.geometry.x]))
+            elif ext in ['.tif', '.tiff']:
+                bounds = tiff_to_image_overlay(file_bytes, file)
+                static_overlays.append(
+                    dl.ImageOverlay(
+                        url="https://upload.wikimedia.org/wikipedia/commons/4/47/PNG_transparency_demonstration_1.png",
+                        bounds=bounds,
+                        opacity=0.5
+                    )
+                )
+
+app.layout = serve_layout(static_overlays)
 
 @app.callback(
     Output('network-filter', 'options'),
@@ -75,7 +116,7 @@ def update_coverages(coverages_contents, coverages_filenames):
                     vector_layers.append(dl.Polygon(positions=[list(row.geometry.exterior.coords)]))
                 elif row.geometry.geom_type == "Point":
                     vector_layers.append(dl.Marker(position=[row.geometry.y, row.geometry.x]))
-        elif ext in ['.geojson', '.json', '.shp']:
+        elif ext in ['.geojson', '.json']:
             with tempfile.NamedTemporaryFile(delete=False, suffix=ext) as tmp:
                 tmp.write(file_bytes)
                 tmp.flush()
@@ -85,10 +126,21 @@ def update_coverages(coverages_contents, coverages_filenames):
                     vector_layers.append(dl.Polygon(positions=[list(row.geometry.exterior.coords)]))
                 elif row.geometry.geom_type == "Point":
                     vector_layers.append(dl.Marker(position=[row.geometry.y, row.geometry.x]))
+        elif ext == '.shp':
+            with tempfile.TemporaryDirectory() as tmpdir:
+                for content, filename in zip(coverages_contents, coverages_filenames):
+                     content_type, content_string = content.split(',')
+                     file_bytes = base64.b64decode(content_string)
+                     with open(os.path.join(tmpdir, filename), 'wb') as f:
+                         f.write(file_bytes)
+                gdf = gpd.read_file(os.path.join(tmpdir, [f for f in os.listdir(tmpdir) if f.endswith('.shp')][0]))
+            for _, row in gdf.iterrows():
+                if row.geometry.geom_type == "Polygon":
+                    vector_layers.append(dl.Polygon(positions=[list(row.geometry.exterior.coords)]))
+                elif row.geometry.geom_type == "Point":
+                    vector_layers.append(dl.Marker(position=[row.geometry.y, row.geometry.x]))
         elif ext in ['.tif', '.tiff']:
             bounds = tiff_to_image_overlay(file_bytes, filename)
-            # For MVP, use a placeholder image (you can generate a PNG from the TIFF for real use)
-            # Here, we just show the bounds as a transparent overlay
             raster_layers.append(
                 dl.ImageOverlay(
                     url="https://upload.wikimedia.org/wikipedia/commons/4/47/PNG_transparency_demonstration_1.png",
@@ -97,30 +149,6 @@ def update_coverages(coverages_contents, coverages_filenames):
                 )
             )
     return vector_layers, raster_layers
-
-# --- QGIS Server Integration Example ---
-# This is a simple example for a spatial join using QGIS Server's WFS endpoint.
-# Replace URL and params with your QGIS Server details.
-
-def qgis_spatial_join(point_lat, point_lon, wfs_url, layer_name):
-    params = {
-        "service": "WFS",
-        "version": "1.0.0",
-        "request": "GetFeature",
-        "typeName": layer_name,
-        "outputFormat": "application/json",
-        "srsName": "EPSG:4326",
-        "CQL_FILTER": f"INTERSECTS(geometry, POINT({point_lon} {point_lat}))"
-    }
-    r = requests.get(wfs_url, params=params)
-    if r.status_code == 200:
-        features = r.json().get("features", [])
-        if features:
-            return features[0]["properties"]
-    return {}
-
-# Example usage in a callback (not wired in above for brevity):
-# props = qgis_spatial_join(48.85, 2.35, "http://your-qgis-server-url/ows", "your_layer_name")
 
 if __name__ == '__main__':
     app.run(debug=True, host="0.0.0.0")
