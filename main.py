@@ -10,9 +10,12 @@ import os
 import tempfile
 import requests
 from fpdf import FPDF
+import sys
 
-from utils.kml_to_geojson import kml_or_kmz_to_gdf
-from utils.raster_to_tile import tiff_to_image_overlay
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
+from app.utils.kml_to_geojson import kml_or_kmz_to_gdf
+from app.utils.raster_to_tile import tiff_to_image_overlay
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 
