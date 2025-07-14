@@ -56,7 +56,8 @@ def update_map(data, network_filter):
         dl.LayersControl(
             [dl.BaseLayer(dl.TileLayer(), name="OpenStreetMap", checked=True)] +
             [dl.Overlay(dl.GeoJSON(data=coverage.__geo_interface__, style={'color': 'blue', 'opacity': 0.5, 'fillOpacity': 0.2}), name="Coverage", checked=True)] +
-            [dl.Overlay(dl.LayerGroup(id='markers'), name="Markers", checked=True)]
+            [dl.Overlay(dl.LayerGroup(id='markers'), name="Markers", checked=True)] +
+            [dl.Overlay(dl.WMSLayer(url="https://qgiscloud.com/ttechnicienheyliot/QGIS_CD38_final__1_/wms", layers="QGIS_CD38_final", format="image/png", transparent=True), name="CD38", checked=True)]
         )
     ]
     if data is None:

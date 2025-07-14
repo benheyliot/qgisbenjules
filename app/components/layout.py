@@ -2,6 +2,7 @@ from dash import dcc, html
 import dash_leaflet as dl
 import dash_uploader as du
 import dash_bootstrap_components as dbc
+from dash_extensions.javascript import assign
 
 layout = dbc.Container([
     dcc.Store(id='dataframe-store'),
@@ -26,5 +27,5 @@ layout = dbc.Container([
                    style={'width': '100%', 'height': '80vh'})
         ], width=8)
     ]),
-    dl.Search(id="search", options=dict(position='topleft'))
+    dl.GeoJSON(url="/assets/search.js", id="search", format="geojson")
 ], fluid=True)
