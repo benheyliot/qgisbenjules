@@ -25,14 +25,21 @@ app.layout = serve_layout
     Input('upload-csv', 'contents'),
     Input('network-filter', 'value'),
     State('upload-csv', 'filename'),
-    prevent_initial_call=True
 )
 def update_map(csv_contents, selected_network, csv_filename):
-    if not csv_contents:
+    if csv_contents:
+        content_type, content_string = csv_contents.split(',')
+        decoded = io.BytesIO(base64.b64decode(content_string))
+        df = pd.read_csv(decoded)
+    else:
+        df = pd.DataFrame()
+        for file in os.listdir('app/data'):
+            if file.endswith('.csv'):
+                df = pd.concat([df, pd.read_csv(os.path.join('app/data', file))])
+
+    if df.empty:
         return [], None, [], ""
-    content_type, content_string = csv_contents.split(',')
-    decoded = io.BytesIO(base64.b64decode(content_string))
-    df = pd.read_csv(decoded)
+
     options = [{'label': n, 'value': n} for n in sorted(df['network_name'].unique())]
     if selected_network:
         df = df[df['network_name'] == selected_network]
