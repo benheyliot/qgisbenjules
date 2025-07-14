@@ -57,6 +57,7 @@ for file in os.listdir('app/data'):
                 )
 
 app.layout = serve_layout(static_overlays)
+server = app.server
 
 @app.callback(
     Output('network-filter', 'options'),
