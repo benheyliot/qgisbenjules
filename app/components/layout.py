@@ -9,12 +9,10 @@ import io
 import os
 import tempfile
 
-from app.components.layout import layout
 from app.utils.kml_to_geojson import kml_or_kmz_to_gdf
 from app.utils.raster_to_tile import tiff_to_image_overlay
 
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
-app.layout = layout
 
 # CSV Upload and Marker Display
 @app.callback(
