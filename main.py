@@ -53,27 +53,19 @@ coverage = gpd.read_file("coverage.geojson")
 def update_map(data, network_filter):
     children = [
         dl.TileLayer(),
-        dl.LayersControl(
-            [dl.BaseLayer(dl.TileLayer(), name="OpenStreetMap", checked=True)] +
-            [dl.Overlay(dl.GeoJSON(data=coverage.__geo_interface__, style={'color': 'blue', 'opacity': 0.5, 'fillOpacity': 0.2}), name="Coverage", checked=True)] +
-            [dl.Overlay(dl.LayerGroup(id='markers'), name="Markers", checked=True)] +
-            [dl.Overlay(dl.WMSLayer(url="https://qgiscloud.com/ttechnicienheyliot/QGIS_CD38_final__1_/wms", layers="QGIS_CD38_final", format="image/png", transparent=True), name="CD38", checked=True)]
-        )
+        dl.GeoJSON(data=coverage.__geo_interface__, style={'color': 'blue', 'opacity': 0.5, 'fillOpacity': 0.2}),
+        dl.WMSLayer(url="https://qgiscloud.com/ttechnicienheyliot/QGIS_CD38_final__1_/wms", layers="QGIS_CD38_final", format="image/png", transparent=True)
     ]
-    if data is None:
-        return children
+    if data is not None:
+        df = pd.DataFrame(data)
+        if network_filter and network_filter != 'all':
+            df = df[df['network_name'] == network_filter]
 
-    df = pd.DataFrame(data)
-    if network_filter and network_filter != 'all':
-        df = df[df['network_name'] == network_filter]
+        markers = []
+        for index, row in df.iterrows():
+            markers.append(dl.Marker(position=[row['latitude'], row['longitude']]))
+        children.append(dl.LayerGroup(markers))
 
-    markers = []
-    for index, row in df.iterrows():
-        markers.append(dl.CircleMarker(center=[row['latitude'], row['longitude']], radius=5,
-                                        children=[
-                                            dl.Tooltip(f"Network: {row['network_name']}\\nLocation: {row['latitude']}, {row['longitude']}")
-                                        ]))
-    children.append(dl.LayerGroup(markers))
     return children
 
 
