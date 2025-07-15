@@ -42,6 +42,15 @@ def update_dropdown(data):
 
 
 import geopandas as gpd
+from owslib.wms import WebMapService
+
+try:
+    wms = WebMapService('https://qgiscloud.com/ttechnicienheyliot/QGIS_CD38_final__1_/wms', version='1.3.0')
+    print("WMS capabilities loaded successfully.")
+    print(list(wms.contents))
+except Exception as e:
+    print(f"Error loading WMS capabilities: {e}")
+
 
 coverage = gpd.read_file("coverage.geojson")
 
