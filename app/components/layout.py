@@ -6,10 +6,12 @@ from dash_extensions.javascript import assign
 
 layout = dbc.Container([
     dcc.Store(id='dataframe-store'),
+    dcc.Store(id='coverage-store'),
     html.H1("LoRa Network Visualizer"),
     dbc.Row([
         dbc.Col([
-            html.Div(du.Upload(), className='upload'),
+            html.Div(du.Upload(id='upload-csv', text='Upload CSV'), className='upload'),
+            html.Div(du.Upload(id='upload-coverage', text='Upload Coverage File'), className='upload'),
             dcc.Dropdown(id='network-filter', placeholder="Filter by network"),
             html.Div(id='stats-section'),
             html.Button("Download Results", id="download-button", disabled=True),

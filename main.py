@@ -17,15 +17,29 @@ server = app.server
 
 @du.callback(
     output=Output('dataframe-store', 'data'),
-    id='upload',
+    id='upload-csv',
 )
-def callback_on_completion(filenames):
+def callback_on_csv_completion(filenames):
     if not filenames:
         return None
 
     filepath = Path(UPLOAD_FOLDER_ROOT) / filenames[0]
     df = pd.read_csv(filepath)
     return df.to_dict('records')
+
+
+@app.callback(
+    output=Output('coverage-store', 'data'),
+    id='upload-coverage',
+)
+def callback_on_coverage_completion(filenames):
+    if not filenames:
+        return None
+
+    filepath = Path(UPLOAD_FOLDER_ROOT) / filenames[0]
+    # For now, assume it's a geojson file
+    gdf = gpd.read_file(filepath)
+    return gdf.to_json()
 
 
 @app.callback(
@@ -57,14 +71,17 @@ coverage = gpd.read_file("coverage.geojson")
 @app.callback(
     Output('markers', 'children'),
     [Input('dataframe-store', 'data'),
+     Input('coverage-store', 'data'),
      Input('network-filter', 'value')]
 )
-def update_map(data, network_filter):
+def update_map(data, coverage_data, network_filter):
     children = [
         dl.TileLayer(),
-        dl.GeoJSON(data=coverage.__geo_interface__, style={'color': 'blue', 'opacity': 0.5, 'fillOpacity': 0.2}),
         dl.WMSLayer(url="https://qgiscloud.com/ttechnicienheyliot/QGIS_CD38_final__1_/wms", layers="QGIS_CD38_final", format="image/png", transparent=True)
     ]
+    if coverage_data is not None:
+        children.append(dl.GeoJSON(data=coverage_data, style={'color': 'blue', 'opacity': 0.5, 'fillOpacity': 0.2}))
+
     if data is not None:
         df = pd.DataFrame(data)
         if network_filter and network_filter != 'all':
