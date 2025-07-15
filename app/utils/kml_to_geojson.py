@@ -3,12 +3,13 @@ import base64
 import requests
 from dash import Dash, dcc, html, Output, Input, State, callback, exceptions
 import dash_leaflet as dl
-from flask import Flask
+from flask import Flask, Blueprint, send_from_directory, jsonify
+import geopandas as gpd
 
 # --- Flask server and blueprint registration ---
+from app.utils.file_server import file_bp
 server = Flask(__name__)
-from app.utils.vector_file_server import vector_bp
-server.register_blueprint(vector_bp)
+server.register_blueprint(file_bp)
 
 # --- Directories ---
 VECTOR_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), 'app', 'data', 'vector'))
