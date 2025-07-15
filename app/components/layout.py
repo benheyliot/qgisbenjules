@@ -10,6 +10,7 @@ layout = dbc.Container([
     html.H1("LoRa Network Visualizer"),
     dbc.Row([
         dbc.Col([
+            dcc.Checklist(id='layer-checklist', options=[], value=[]),
             html.Div(du.Upload(id='upload-csv', text='Upload CSV'), className='upload'),
             html.Div(du.Upload(id='upload-coverage', text='Upload Coverage File'), className='upload'),
             dcc.Dropdown(id='network-filter', placeholder="Filter by network"),

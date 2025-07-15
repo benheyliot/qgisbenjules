@@ -42,6 +42,21 @@ def callback_on_coverage_completion(filenames):
     return gdf.to_json()
 
 
+import os
+
+@app.callback(
+    Output('layer-checklist', 'options'),
+    Output('layer-checklist', 'value'),
+    Input('dataframe-store', 'data')  # Just to trigger on app load
+)
+def update_layer_checklist(_):
+    vector_layers = [f for f in os.listdir('app/data/vector') if f.endswith('.geojson')]
+    raster_layers = [f for f in os.listdir('app/data/raster') if f.endswith('.tif')]
+
+    options = [{'label': layer, 'value': layer} for layer in vector_layers + raster_layers]
+    return options, []
+
+
 @app.callback(
     Output('network-filter', 'options'),
     Input('dataframe-store', 'data')
@@ -72,13 +87,21 @@ coverage = gpd.read_file("coverage.geojson")
     Output('markers', 'children'),
     [Input('dataframe-store', 'data'),
      Input('coverage-store', 'data'),
-     Input('network-filter', 'value')]
+     Input('network-filter', 'value'),
+     Input('layer-checklist', 'value')]
 )
-def update_map(data, coverage_data, network_filter):
+def update_map(data, coverage_data, network_filter, selected_layers):
     children = [
         dl.TileLayer(),
         dl.WMSLayer(url="https://qgiscloud.com/ttechnicienheyliot/QGIS_CD38_final__1_/wms", layers="QGIS_CD38_final", format="image/png", transparent=True)
     ]
+
+    for layer in selected_layers:
+        if layer.endswith('.geojson'):
+            path = os.path.join('app/data/vector', layer)
+            gdf = gpd.read_file(path)
+            children.append(dl.GeoJSON(data=gdf.to_json(), style={'color': 'red', 'opacity': 0.5, 'fillOpacity': 0.2}))
+
     if coverage_data is not None:
         children.append(dl.GeoJSON(data=coverage_data, style={'color': 'blue', 'opacity': 0.5, 'fillOpacity': 0.2}))
 
